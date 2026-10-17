@@ -1,0 +1,37 @@
+[
+ {
+  "chapter": "Gancho",
+  "title": "O seu próprio Jarvis",
+  "speech": "Você pode ter o seu próprio Jarvis: um assistente que fala com você pelo Telegram, lembra das conversas e tem a personalidade que você escolher. Essa é a sequência dois, o INTELECTO. Neste vídeo: o que ele é, como ele pensa, como instalar, e no fim, o que ele vira quando você liga as próximas sequências."
+ },
+ {
+  "chapter": "O que é",
+  "title": "Pequeno de propósito",
+  "speech": "O INTELECTO é um assistente pessoal escrito do zero em Python. Sem framework pesado, sem Docker, sem painel web. São cerca de três mil linhas e sete dependências. Pequeno de propósito: você consegue ler, entender e mudar."
+ },
+ {
+  "chapter": "Como pensa",
+  "title": "Telegram, agente, modelo",
+  "speech": "O caminho é simples. Você manda uma mensagem no Telegram. O INTELECTO recebe, o laço do agente pensa, busca na memória, usa ferramentas, e o modelo gera a resposta: na nuvem, pelo OpenRouter, ou local, pelo Ollama. A resposta volta no Telegram. É o mesmo desenho dos assistentes grandes, só que seu."
+ },
+ {
+  "chapter": "Instalar",
+  "title": "Um comando e seis passos",
+  "speech": "A instalação começa com um comando: start ponto sh. Ele prepara o ambiente e abre um assistente de configuração em seis passos. Você cria o bot no Telegram com o BotFather e cola o token. Escolhe o modelo. Define o nome e a personalidade. E o seu bot começa a responder."
+ },
+ {
+  "chapter": "Memória",
+  "title": "Ele lembra de você",
+  "speech": "O que faz dele um Jarvis é a memória e a personalidade. Ele lembra do que vocês conversaram, guarda o que importa, e fala do jeito que você definiu. Não é um site que esquece tudo quando você fecha a aba."
+ },
+ {
+  "chapter": "Pré-requisito",
+  "title": "Por que depois do OSWork",
+  "speech": "Por isso ele vem depois do OSWork. Você vai precisar de terminal, pastas, um arquivo de configuração e uma chave guardada no lugar certo. Quem fez a sequência um instala o Jarvis sem susto."
+ },
+ {
+  "chapter": "Comece hoje",
+  "title": "Dê um nome a ele",
+  "speech": "E o próximo passo é dar trabalho de verdade para ele: filas de tarefas, na sequência três. O INTELECTO, o guia de instalação e a área Jarvis estão no INEMA ponto CLUB, abertos e gratuitos. Instale o seu, dê um nome, e comece a conversar."
+ }
+]

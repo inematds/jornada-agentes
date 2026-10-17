@@ -39,7 +39,7 @@ echo "Liste 3 riscos de deixar um agente rodando sozinho." > fila/entrada/02.md
 
 ## Vídeos
 
-Cinco vídeos (abertura + um por sequência), em produção, publicados no canal INEMA FTD. Roteiros: [videos/roteiros.md](videos/roteiros.md).
+Cinco vídeos (abertura + um por sequência), cada um com a sua página explicativa em [serie/](https://inematds.github.io/jornada-agentes/serie/jornada-ia/) (PT/EN/ES). Roteiros: [videos/roteiros.md](videos/roteiros.md).
 
 ## Estrutura
 

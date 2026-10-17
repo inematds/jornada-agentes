@@ -1,0 +1,423 @@
+{
+  "ui": {
+    "lang": "pt-BR",
+    "brand": "Jornada dos Agentes",
+    "nav_video": "Vídeo",
+    "nav_how": "Como funciona",
+    "nav_ex": "Exercícios",
+    "nav_mat": "Materiais",
+    "back_series": "Série completa",
+    "theme": "Alternar tema claro/escuro",
+    "watch": "Assistir ao vídeo",
+    "video_chip": "O vídeo",
+    "video_pending_title": "Vídeo em produção",
+    "video_pending_text": "O vídeo desta página está sendo gravado com o avatar do Nei. Enquanto isso, o roteiro completo está logo abaixo, cena por cena.",
+    "script_title": "O roteiro do vídeo, cena por cena",
+    "scene": "Cena",
+    "ex_chip": "Pratique",
+    "ex_h2": "Exercícios desta sequência",
+    "ex_sub": "Faça na ordem. Cada exercício tem um \"pronto quando\": só passe para o próximo quando ele for verdade.",
+    "ex_open": "Abrir os exercícios completos",
+    "ready": "Pronto quando",
+    "mat_chip": "Materiais",
+    "mat_h2": "Cursos, projetos e guias",
+    "mat_sub": "Tudo aberto e gratuito. Comece pelo primeiro da lista.",
+    "prev": "Anterior",
+    "next": "Próxima",
+    "seq_of": "Sequência {n} de 4",
+    "overview": "Visão geral",
+    "footer": "Série \"Do chat ao agente\" · INEMA · conteúdo aberto e gratuito",
+    "area": "Área do evento",
+    "subtitles": "Português",
+    "ex_base": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/"
+  },
+  "pages": {
+    "jornada-ia": {
+      "nav": "Visão geral",
+      "chip": "Série · Do chat ao agente",
+      "title": "Do chat ao agente: as 4 sequências para entrar de verdade na IA",
+      "h1": "Do chat ao <span class=\"amb\">agente</span>, em quatro degraus",
+      "lead": "Saia do copia e cola e crie agentes que trabalham por você: no seu computador, numa fila de tarefas e nas suas redes sociais.",
+      "description": "Visão geral da série Do chat ao agente: por que o chat trava, as 4 sequências (OSWork, Jarvis, filas e redes no automático), a ordem certa e por onde começar hoje. Aberto e gratuito.",
+      "resumo": "A maioria das pessoas para no chat: pergunta, copia, cola e pergunta de novo. Esta série mostra o caminho inteiro até criar agentes que trabalham sozinhos, em quatro sequências. Primeiro o terminal e as pastas (OSWork), depois um assistente seu no Telegram (INTELECTO), depois uma fila de tarefas que roda enquanto você dorme (inemaccbot) e, por fim, as redes sociais no automático. Cada sequência tem curso, projeto aberto, vídeo e exercícios com critério de pronto.",
+      "sections": [
+        {
+          "id": "como-funciona",
+          "chip": "O problema",
+          "h2": "O chat trava. O sistema continua.",
+          "sub": "No chat você é o motorista o tempo todo. Quando fecha a janela, o trabalho para.",
+          "blocks": [
+            {"type": "compare", "left_title": "No chat", "left": ["Você pergunta, copia, cola e ajusta.", "A IA não enxerga os seus arquivos.", "Esquece o que você explicou ontem.", "Fechou a janela, o trabalho parou."], "right_title": "Com um agente", "right": ["Você dá a tarefa e confere o resultado.", "Ele lê e escreve os arquivos da sua pasta.", "Lê as regras do projeto toda vez que começa.", "Continua trabalhando enquanto você faz outra coisa."]},
+            {"type": "note", "text": "A virada não é aprender um modelo novo. É <b>mudar de lugar</b>: do chat para o sistema."}
+          ]
+        },
+        {
+          "id": "sequencias",
+          "chip": "As 4 sequências",
+          "h2": "O caminho inteiro, um degrau por vez",
+          "sub": "Cada degrau usa o anterior. Clique numa sequência para ver a página dela.",
+          "blocks": [
+            {"type": "seqcards"}
+          ]
+        },
+        {
+          "id": "ordem",
+          "chip": "A ordem importa",
+          "h2": "Sem milagre",
+          "sub": "Não existe \"render enquanto você dorme\" se o sistema não roda correto.",
+          "blocks": [
+            {"type": "flow", "items": ["Pasta e terminal", "Assistente", "Fila", "Redes no automático"]},
+            {"type": "p", "text": "Quem pula a sequência 1 empaca nas outras três. Pastas, terminal e comandos simples são a base de tudo o que vem depois: o Jarvis precisa de um arquivo de configuração e de uma chave guardada no lugar certo, a fila precisa de um projeto organizado, e o canal automático precisa de fila e de portão de aprovação."},
+            {"type": "table", "head": ["Você hoje", "Comece por"], "rows": [
+              ["Uso só o chat (ChatGPT, Claude, Gemini)", "<a href=\"../seq1-oswork/\">Sequência 1 · OSWork</a>"],
+              ["Já uso o terminal e o Claude Code ou o Codex", "<a href=\"../seq2-jarvis/\">Sequência 2 · o seu Jarvis</a>"],
+              ["Já tenho um assistente rodando", "<a href=\"../seq3-filas/\">Sequência 3 · filas</a>"],
+              ["Já tenho fila e quero publicar", "<a href=\"../seq4-redes/\">Sequência 4 · redes</a>"]
+            ]}
+          ]
+        }
+      ],
+      "exercises": [],
+      "materials": [
+        {"label": "Guia da Jornada dos Agentes", "href": "https://inematds.github.io/jornada-agentes/guia/", "note": "os 23 exercícios em um lugar"},
+        {"label": "OSWork Quick", "href": "https://inematds.github.io/oswork-quick/", "note": "o primeiro degrau, em sete aulas"},
+        {"label": "Área Do chat ao agente", "href": "https://eventos.inema.pro/do-chat-ao-agente/", "note": "eventos INEMA"},
+        {"label": "Repositório no GitHub", "href": "https://github.com/inematds/jornada-agentes", "note": "exercícios e fila caseira"}
+      ],
+      "cta_title": "Comece hoje pela sequência 1",
+      "cta_text": "Os cursos, os guias e os projetos de cada sequência estão no INEMA.CLUB, abertos e gratuitos. Saia do chat e comece a criar os seus agentes.",
+      "cta_label": "Ir para a sequência 1",
+      "cta_href": "../seq1-oswork/"
+    },
+    "seq1-oswork": {
+      "nav": "1 · OSWork",
+      "chip": "Sequência 1 · Terminal",
+      "card_title": "OSWork: do chat para o terminal",
+      "card_text": "Pastas, markdown, AGENTS.md e o agente (Claude Code ou Codex) trabalhando dentro da sua pasta.",
+      "title": "Sequência 1 — Do chat para o terminal: OSWork",
+      "h1": "Um agente dentro das <span class=\"amb\">suas pastas</span>",
+      "lead": "Com meia dúzia de comandos você sai do chat e coloca o Claude Code ou o Codex para trabalhar nos seus arquivos.",
+      "description": "Sequência 1 da série Do chat ao agente: o terminal, as pastas, o AGENTS.md, a primeira tarefa para o agente, Git e segredos fora do texto. Com vídeo, exercícios e o curso OSWork, aberto e gratuito.",
+      "resumo": "O OSWork é o degrau que separa quem usa inteligência artificial de quem cria com ela. Você aprende seis comandos de terminal, organiza o trabalho em pastas com arquivos de texto em markdown e escreve um AGENTS.md com as regras do projeto. Depois chama o agente dentro da pasta, dá uma tarefa e confere o resultado. Por fim, coloca uma rede de segurança: o Git para desfazer erros e um arquivo de segredos para as chaves.",
+      "sections": [
+        {
+          "id": "como-funciona",
+          "chip": "Por que o chat trava",
+          "h2": "No chat, você vira o carteiro",
+          "sub": "A IA do chat não enxerga os seus arquivos e esquece o que você explicou ontem.",
+          "blocks": [
+            {"type": "p", "text": "Cada resposta precisa ser copiada e colada no lugar certo. Você passa o dia levando texto da janela para o trabalho e de volta. O OSWork mostra o caminho em três janelas, o <b>Chat</b>, o <b>Work</b> e o <b>Desktop</b>, e depois o <b>terminal</b>, onde o agente mora."},
+            {"type": "flow", "items": ["Chat", "Work", "Desktop", "Terminal"]}
+          ]
+        },
+        {
+          "id": "terminal",
+          "chip": "Passo 1",
+          "h2": "O terminal é só outra janela",
+          "sub": "Você digita um comando e ele responde. Não é programar: é andar pelas suas pastas sem o mouse.",
+          "blocks": [
+            {"type": "table", "head": ["O que você quer", "Windows (cmd)", "Mac e Linux"], "rows": [
+              ["Ver onde está", "<code>cd</code>", "<code>pwd</code>"],
+              ["Listar a pasta", "<code>dir</code>", "<code>ls</code>"],
+              ["Entrar numa pasta", "<code>cd projetos</code>", "<code>cd projetos</code>"],
+              ["Voltar uma pasta", "<code>cd ..</code>", "<code>cd ..</code>"],
+              ["Criar uma pasta", "<code>mkdir meu-projeto</code>", "<code>mkdir meu-projeto</code>"],
+              ["Ver um arquivo", "<code>type AGENTS.md</code>", "<code>cat AGENTS.md</code>"]
+            ]},
+            {"type": "code", "text": "<span class=\"c\"># Mac e Linux: a primeira pasta do seu agente</span>\nmkdir -p projetos/meu-primeiro-agente\ncd projetos/meu-primeiro-agente\npwd\nls"}
+          ]
+        },
+        {
+          "id": "pastas",
+          "chip": "Passo 2",
+          "h2": "Uma pasta por projeto, um AGENTS.md",
+          "sub": "O segredo está nas pastas. Dentro de cada uma, arquivos de texto em markdown.",
+          "blocks": [
+            {"type": "p", "text": "O <code>AGENTS.md</code> traz as regras do projeto: quem você é, o que o agente pode fazer e o que não pode. O agente lê esse arquivo toda vez que começa. É como entregar o manual para um funcionário novo."},
+            {"type": "code", "text": "# Quem sou\nAna, contadora, atendo pequenas empresas.\n\n# Regras deste projeto\n- Escreva em português, frases curtas.\n- Não apague arquivos sem perguntar.\n- Antes de terminar, diga o que mudou e como eu confiro.\n\n# O que tem aqui\n- index.html: minha página"}
+          ]
+        },
+        {
+          "id": "agente",
+          "chip": "Passo 3",
+          "h2": "Você dá a tarefa, o agente faz",
+          "sub": "Entre na pasta do projeto e chame o Claude Code (claude) ou o Codex (codex).",
+          "blocks": [
+            {"type": "code", "text": "cd projetos/meu-primeiro-agente\nclaude        <span class=\"c\"># ou: codex</span>"},
+            {"type": "quote", "text": "Leia o AGENTS.md. Crie um index.html com uma página simples sobre mim, usando o que está lá."},
+            {"type": "p", "text": "Os arquivos aparecem na pasta. Abra a página no navegador, peça uma correção e confira de novo. Você não programou nada: deu a tarefa, conferiu o resultado e decidiu. <b>Isso é gestão.</b>"}
+          ]
+        },
+        {
+          "id": "seguranca",
+          "chip": "Passo 4",
+          "h2": "A rede de segurança: Git, segredos e VPS",
+          "sub": "Errar fica barato quando você consegue voltar.",
+          "blocks": [
+            {"type": "cards", "items": [
+              {"title": "Git guarda cada versão", "text": "Um commit antes de cada mudança grande. Se o agente errar, <code>git restore</code> volta o arquivo."},
+              {"title": "Segredos fora do texto", "text": "Chaves e senhas ficam num arquivo <code>.env</code>, listado no <code>.gitignore</code>. Nunca dentro do código."},
+              {"title": "Telegram e VPS", "text": "No fim do percurso, o Telegram vira a interface e uma VPS deixa o agente rodando com o seu computador desligado."}
+            ]},
+            {"type": "code", "text": "git init\ngit add .\ngit commit -m \"primeira versão\"\n<span class=\"c\"># não gostou da mudança do agente?</span>\ngit restore index.html"}
+          ]
+        }
+      ],
+      "exercises_file": "01-oswork.md",
+      "exercises": [
+        {"n": "E1", "title": "Sua primeira pasta pelo terminal", "time": "10 min", "ready": "você chega até a pasta só pelo terminal e sabe dizer em que pasta está."},
+        {"n": "E2", "title": "O manual do funcionário: AGENTS.md", "time": "15 min", "ready": "o arquivo existe e tem pelo menos três regras escritas por você."},
+        {"n": "E3", "title": "A primeira tarefa", "time": "15 min", "ready": "a página abre no navegador e você pediu pelo menos uma correção ao agente."},
+        {"n": "E4", "title": "A rede de segurança: Git", "time": "20 min", "ready": "você desfez uma mudança do agente com um comando, sem pânico."},
+        {"n": "E5", "title": "Segredo não entra no texto", "time": "10 min", "ready": "o git status não mostra o .env."},
+        {"n": "E6", "title": "O agente lê os seus arquivos", "time": "20 min", "ready": "você achou no original pelo menos duas das frases citadas no resumo."}
+      ],
+      "materials": [
+        {"label": "OSWork Quick", "href": "https://inematds.github.io/oswork-quick/", "note": "o caminho curto, em sete aulas"},
+        {"label": "OSWork v6.2", "href": "https://inematds.github.io/oswork-v62/", "note": "passo a passo para iniciantes, com cmd e VPS"},
+        {"label": "Vídeos do OSWork no terminal", "href": "https://inematds.github.io/oswork-terminal/videos/", "note": "a aula em vídeo"},
+        {"label": "Área OSWork", "href": "https://eventos.inema.pro/oswork/", "note": "eventos INEMA"}
+      ],
+      "cta_title": "Abra o terminal hoje",
+      "cta_text": "Esse é o degrau que destrava o Jarvis, as filas e as redes no automático. Crie a sua primeira pasta e dê a primeira tarefa para o seu agente.",
+      "cta_label": "Abrir o OSWork Quick",
+      "cta_href": "https://inematds.github.io/oswork-quick/"
+    },
+    "seq2-jarvis": {
+      "nav": "2 · Jarvis",
+      "chip": "Sequência 2 · Assistente",
+      "card_title": "O seu Jarvis com o INTELECTO",
+      "card_text": "Um assistente seu no Telegram, com memória e a personalidade que você definir.",
+      "title": "Sequência 2 — Crie o seu Jarvis com o INTELECTO",
+      "h1": "Crie o seu <span class=\"amb\">Jarvis</span>",
+      "lead": "Um assistente pessoal que fala com você pelo Telegram, lembra das conversas e tem a personalidade que você escolher.",
+      "description": "Sequência 2 da série Do chat ao agente: o INTELECTO, assistente pessoal em Python que conversa pelo Telegram, com memória, modelo na nuvem (OpenRouter) ou local (Ollama). Instalação, exercícios e curso, abertos e gratuitos.",
+      "resumo": "O INTELECTO é um assistente pessoal escrito do zero em Python, pequeno de propósito para você conseguir ler, entender e mudar. Ele recebe as suas mensagens no Telegram, pensa num laço de agente, busca na memória, usa ferramentas e responde com um modelo na nuvem (OpenRouter) ou no seu computador (Ollama). A instalação é um comando e um assistente de configuração em seis passos. Ele vem depois do OSWork porque usa terminal, pastas e uma chave guardada no lugar certo.",
+      "sections": [
+        {
+          "id": "como-funciona",
+          "chip": "O que é",
+          "h2": "Pequeno de propósito",
+          "sub": "Sem framework pesado, sem Docker, sem painel web.",
+          "blocks": [
+            {"type": "cards", "items": [
+              {"title": "Cerca de 3.000 linhas", "text": "Código em Python que cabe numa tarde de leitura. Você entende o que ele faz."},
+              {"title": "7 dependências", "text": "Poucas peças para instalar e quase nada para quebrar."},
+              {"title": "Seu, de verdade", "text": "Roda no seu computador. Você deixa de abrir um site para conversar."}
+            ]}
+          ]
+        },
+        {
+          "id": "pensa",
+          "chip": "Como pensa",
+          "h2": "Telegram, agente, modelo",
+          "sub": "É o mesmo desenho dos assistentes grandes, só que seu.",
+          "blocks": [
+            {"type": "flow", "items": ["Você no Telegram", "INTELECTO recebe", "Laço do agente: memória e ferramentas", "Modelo gera a resposta", "Resposta no Telegram"]},
+            {"type": "compare", "left_title": "Modelo na nuvem (OpenRouter)", "left": ["Modelos grandes, respostas melhores.", "Paga por uso, com chave própria.", "Não depende da potência do seu computador."], "right_title": "Modelo local (Ollama)", "right": ["Roda na sua máquina, sem custo por mensagem.", "Os dados não saem do computador.", "Precisa de memória e, de preferência, placa de vídeo."]}
+          ]
+        },
+        {
+          "id": "instalar",
+          "chip": "Instalar",
+          "h2": "Um comando e seis passos",
+          "sub": "O start.sh prepara o ambiente e abre o assistente de configuração.",
+          "blocks": [
+            {"type": "code", "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto\n./start.sh"},
+            {"type": "steps", "items": [
+              {"title": "Crie o bot no Telegram", "text": "Abra o @BotFather, mande /newbot, escolha nome e @usuário e copie o token."},
+              {"title": "Cole o token", "text": "O assistente confere se o token vale e mostra o nome do seu bot."},
+              {"title": "Escolha o modelo", "text": "Nuvem pelo OpenRouter ou local pelo Ollama."},
+              {"title": "Defina nome e personalidade", "text": "Como ele fala: formal, direto ou bem-humorado."},
+              {"title": "Mande \"oi\"", "text": "O seu bot responde com o nome e o jeito que você definiu."}
+            ]},
+            {"type": "note", "text": "O token e as chaves ficam só no arquivo de configuração, nunca num texto que vai para o Git. É a regra que você aprendeu na sequência 1."}
+          ]
+        },
+        {
+          "id": "memoria",
+          "chip": "Memória",
+          "h2": "Ele lembra de você",
+          "sub": "O que faz dele um Jarvis é a memória e a personalidade.",
+          "blocks": [
+            {"type": "p", "text": "Ele lembra do que vocês conversaram, guarda o que importa e fala do jeito que você definiu. Conte numa segunda que você fecha o relatório de vendas toda semana; na terça, numa conversa nova, pergunte o que você faz às segundas. Não é um site que esquece tudo quando você fecha a aba."}
+          ]
+        }
+      ],
+      "exercises_file": "02-jarvis.md",
+      "exercises": [
+        {"n": "E1", "title": "Desenhe o seu Jarvis antes de instalar", "time": "15 min", "ready": "o arquivo cabe numa tela e outra pessoa entenderia quem é o seu assistente."},
+        {"n": "E2", "title": "O bot no Telegram", "time": "10 min", "ready": "você tem o token e ele não aparece em nenhum arquivo além do .env."},
+        {"n": "E3", "title": "Instalar", "time": "30 min", "ready": "você manda \"oi\" e ele responde com o nome e o jeito que você definiu."},
+        {"n": "E4", "title": "Teste de memória", "time": "2 dias", "ready": "ele lembra sem você repetir."},
+        {"n": "E5", "title": "Nuvem ou local", "time": "20 min", "ready": "você sabe dizer qual modelo usar para quê, com os seus números."},
+        {"n": "E6", "title": "Uma rotina de verdade", "time": "20 min", "ready": "você usou 5 dias seguidos e anotou o que melhorar."}
+      ],
+      "materials": [
+        {"label": "INTELECTO", "href": "https://inematds.github.io/intelecto/", "note": "o projeto e a instalação"},
+        {"label": "Curso INTELECTO", "href": "https://inematds.github.io/intelecto-curso/", "note": "como ele funciona por dentro"},
+        {"label": "Vídeos da instalação", "href": "https://inematds.github.io/intelecto-instalacao/videos/", "note": "passo a passo em vídeo"},
+        {"label": "Área JARVIS", "href": "https://eventos.inema.pro/jarvis/", "note": "eventos INEMA"}
+      ],
+      "cta_title": "Instale o seu e dê um nome a ele",
+      "cta_text": "O próximo passo é dar trabalho de verdade para ele: filas de tarefas, na sequência 3.",
+      "cta_label": "Abrir o INTELECTO",
+      "cta_href": "https://inematds.github.io/intelecto/"
+    },
+    "seq3-filas": {
+      "nav": "3 · Filas",
+      "chip": "Sequência 3 · Filas",
+      "card_title": "Filas: dez tarefas e vá dormir",
+      "card_text": "O inemaccbot guarda cada tarefa, retoma se cair e para no portão quando precisa de você.",
+      "title": "Sequência 3 — Filas de agentes: o inemaccbot trabalha enquanto você dorme",
+      "h1": "Dez tarefas e <span class=\"amb\">vá dormir</span>",
+      "lead": "Uma fila de tarefas para os seus agentes, com retomada se algo cair e um portão onde o trabalho espera a sua aprovação.",
+      "description": "Sequência 3 da série Do chat ao agente: por que um agente sozinho não basta, a fila durável do inemaccbot, as skills que rodam na fila e o portão de aprovação humana. Com vídeo, fila caseira e exercícios, aberto e gratuito.",
+      "resumo": "Um agente no terminal faz uma coisa por vez e só enquanto você está olhando. A fila resolve isso: cada pedido vira uma tarefa guardada, pega uma por vez e retomada se a máquina cair. O inemaccbot é um bot de Telegram com essa fila durável, rodando skills como transcrever, dublar, vídeo explicativo, curso e reel. Nos fluxos de várias fases, um portão humano faz o bot parar e esperar a sua aprovação. É aqui que você passa de quem faz para quem gerencia.",
+      "sections": [
+        {
+          "id": "como-funciona",
+          "chip": "O problema",
+          "h2": "Um agente sozinho se perde",
+          "sub": "Ele faz uma coisa por vez, e só enquanto você está olhando.",
+          "blocks": [
+            {"type": "cards", "items": [
+              {"title": "Caiu, perdeu", "text": "Se a internet cai ou a máquina reinicia, o trabalho em andamento some."},
+              {"title": "Dez pedidos se atropelam", "text": "Pedidos ao mesmo tempo disputam a mesma pasta e o mesmo agente."},
+              {"title": "Você preso na tela", "text": "Sem fila, alguém precisa ficar mandando o próximo pedido."}
+            ]}
+          ]
+        },
+        {
+          "id": "fila",
+          "chip": "A fila",
+          "h2": "Fila durável: nada se perde",
+          "sub": "Cada pedido vira uma tarefa guardada num banco SQLite.",
+          "blocks": [
+            {"type": "flow", "items": ["Pedido no Telegram", "Tarefa guardada", "Pega com sinal de vida", "Rodando", "Feito ou volta para a fila"]},
+            {"type": "p", "text": "Enquanto roda, a tarefa manda um <b>sinal de vida</b>. Se o sinal para, porque a máquina caiu ou o processo travou, a tarefa volta para a fila e é retomada. Antes de instalar o bot, você pode ver a mesma ideia em 30 linhas com a fila caseira deste repositório:"},
+            {"type": "code", "text": "mkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila   <span class=\"c\"># respostas em fila/feito/</span>"}
+          ]
+        },
+        {
+          "id": "skills",
+          "chip": "O que vai na fila",
+          "h2": "Skills que rodam como agente",
+          "sub": "Você manda o pedido pelo Telegram. O motor padrão é o Claude Code, com o Codex ou o OpenCode como alternativa.",
+          "blocks": [
+            {"type": "pills", "items": ["Transcrever", "Dublar", "Vídeo explicativo", "Curso", "Demonstração", "Reel"]}
+          ]
+        },
+        {
+          "id": "portao",
+          "chip": "O portão",
+          "h2": "Automático, com você no comando",
+          "sub": "Fluxos de várias fases, com o estado guardado em cada uma.",
+          "blocks": [
+            {"type": "steps", "items": [
+              {"title": "O bot escreve os textos", "text": "Primeira fase do fluxo, sem gastar nada caro."},
+              {"title": "E para no portão", "text": "Você lê, corrige o que precisar, e aprova ou recusa."},
+              {"title": "Só então segue", "text": "Avatar, download e vídeo rodam depois do seu ok."}
+            ]},
+            {"type": "note", "text": "Você define as tarefas, os portões e as regras. Os agentes executam na fila, e você decide nos pontos que importam. <b>De quem faz a quem gerencia.</b>"}
+          ]
+        }
+      ],
+      "exercises_file": "03-filas.md",
+      "exercises": [
+        {"n": "E1", "title": "A fila no papel", "time": "15 min", "ready": "10 tarefas listadas e pelo menos duas com portão."},
+        {"n": "E2", "title": "Uma fila caseira em 30 linhas", "time": "30 min", "ready": "as tarefas estão em fila/feito/ e a fila continuou de onde parou depois de um Ctrl+C."},
+        {"n": "E3", "title": "Instalar o inemaccbot", "time": "1 h", "ready": "o /ping responde no seu Telegram."},
+        {"n": "E4", "title": "Dez tarefas e vá dormir", "time": "1 noite", "ready": "você conferiu cada resultado e anotou quantas saíram certas na primeira."},
+        {"n": "E5", "title": "O portão", "time": "30 min", "ready": "você recusou ou corrigiu pelo menos um texto antes de aprovar."}
+      ],
+      "materials": [
+        {"label": "Guia do inemaccbot", "href": "https://inematds.github.io/inemaccbot/guia/", "note": "instalação e arquitetura"},
+        {"label": "Curso INEMACCBOT", "href": "https://eventos.inema.pro/inemaccbot.html", "note": "com o fluxo promoavatar"},
+        {"label": "Fila caseira", "href": "https://github.com/inematds/jornada-agentes/blob/main/ferramentas/fila-caseira.sh", "note": "a ideia em 30 linhas"}
+      ],
+      "cta_title": "Monte a sua fila",
+      "cta_text": "Com a fila de pé, dá para colocar as redes sociais no automático: a sequência 4.",
+      "cta_label": "Abrir o guia do inemaccbot",
+      "cta_href": "https://inematds.github.io/inemaccbot/guia/"
+    },
+    "seq4-redes": {
+      "nav": "4 · Redes",
+      "chip": "Sequência 4 · Redes",
+      "card_title": "O canal viral do seu nicho",
+      "card_text": "r7e, promoavatar e os xviral: finviral, saudeviral e advviral publicando com fonte na tela.",
+      "title": "Sequência 4 — Redes no automático: r7e, promoavatar e o canal viral do seu nicho",
+      "h1": "Redes no <span class=\"amb\">automático</span>",
+      "lead": "Um canal que publica sozinho, todo dia, sobre o seu nicho, com números, fontes e o seu rosto.",
+      "description": "Sequência 4 da série Do chat ao agente: o reel de 7 etapas (r7e), o promoavatar e os canais xviral (finviral, saudeviral, advviral) que publicam sozinhos com fonte na tela. Como criar o canal viral do seu nicho. Aberto e gratuito.",
+      "resumo": "A última sequência junta tudo para colocar as redes sociais no automático. O r7e monta um reel em sete etapas de gatilho, com uma imagem por etapa, o avatar falando e portões de qualidade. O promoavatar faz vídeos de divulgação com avatar para doze públicos, parando para a sua aprovação. Os xviral (finviral, saudeviral e advviral) assistem aos maiores do nicho, separam números e fontes, conferem cada trecho e publicam sozinhos. O motor é o mesmo: só muda o tema.",
+      "sections": [
+        {
+          "id": "como-funciona",
+          "chip": "r7e",
+          "h2": "O reel de 7 etapas",
+          "sub": "Você escreve a ideia; o sistema monta um reel com sete gatilhos em sequência.",
+          "blocks": [
+            {"type": "flow", "items": ["Gancho", "Desejo", "Medo", "Facilidade", "Descoberta", "Benefício", "Comentário"]},
+            {"type": "p", "text": "O sistema gera uma imagem por etapa, o avatar fala, a legenda destaca a palavra certa, e o reel passa por portões de qualidade antes de publicar. O fecho pede um comentário com uma palavra, que vira conversa com quem assistiu."}
+          ]
+        },
+        {
+          "id": "promoavatar",
+          "chip": "promoavatar",
+          "h2": "Um vídeo para cada público",
+          "sub": "Um fluxo dentro do inemaccbot que faz vídeos de divulgação com avatar para doze públicos diferentes.",
+          "blocks": [
+            {"type": "steps", "items": [
+              {"title": "O bot escreve os textos e para", "text": "Um roteiro por público, esperando a sua leitura."},
+              {"title": "Você aprova", "text": "Corrige o que precisar no portão."},
+              {"title": "Ele segue", "text": "Avatar, download e reel, sem você na tela."}
+            ]},
+            {"type": "p", "text": "O <b>promoavatar3</b> vai além: três vídeos por público, um de alcance, um de autoridade e um promocional."}
+          ]
+        },
+        {
+          "id": "xviral",
+          "chip": "xviral",
+          "h2": "finviral, saudeviral, advviral",
+          "sub": "Finanças, saúde e direito, com a fonte na tela.",
+          "blocks": [
+            {"type": "flow", "items": ["Assiste aos maiores do nicho", "Transcreve", "Separa números, fatos e polêmicas", "Confere cada trecho", "Monta o vídeo"]},
+            {"type": "p", "text": "O vídeo sai com números animados, a fonte escrita na tela e o avatar comentando. O finviral roda de madrugada, todo dia, e no fim de semana ainda faz um vídeo longo explicando a semana. <b>Dia fraco não vira vídeo</b>, e se algo falha, o aviso chega no Telegram."}
+          ]
+        },
+        {
+          "id": "nicho",
+          "chip": "O seu nicho",
+          "h2": "O mesmo motor, outro tema",
+          "sub": "Troque os canais de referência e as regras do nicho.",
+          "blocks": [
+            {"type": "pills", "items": ["Imóveis", "Agro", "Educação", "Beleza", "Tecnologia"]},
+            {"type": "note", "text": "Isso só fica de pé em cima das três sequências anteriores. Sem fila e sem portão, automatizar rede social vira <b>postar errado mais rápido</b>."}
+          ]
+        }
+      ],
+      "exercises_file": "04-redes.md",
+      "exercises": [
+        {"n": "E1", "title": "Um reel em 7 etapas, no papel", "time": "20 min", "ready": "você lê em menos de 45 s e a primeira frase já diz o ganho."},
+        {"n": "E2", "title": "Os 5 do seu nicho", "time": "20 min", "ready": "você tem canais.md e regras.md do seu nicho."},
+        {"n": "E3", "title": "A base com fonte", "time": "30 min", "ready": "cada linha da base tem o trecho literal, achado na transcrição."},
+        {"n": "E4", "title": "Roteiro de 60 s com fonte na tela", "time": "30 min", "ready": "todo número do roteiro está na base."},
+        {"n": "E5", "title": "A agenda", "time": "20 min", "ready": "o agendamento está escrito e você sabe o que acontece num dia sem assunto."},
+        {"n": "E6", "title": "O portão antes de publicar", "time": "1 semana", "ready": "3 dias seguidos sem precisar recusar."}
+      ],
+      "materials": [
+        {"label": "r7e · reel de 7 etapas", "href": "https://inematds.github.io/reel7etapas/guia/", "note": "o modelo de gatilhos"},
+        {"label": "promoavatar", "href": "https://inematds.github.io/promoavatar/guia/", "note": "um vídeo por público"},
+        {"label": "promoavatar3", "href": "https://inematds.github.io/promoavatar3/guia/", "note": "alcance, autoridade e promocional"},
+        {"label": "finviral", "href": "https://inematds.github.io/finviral/guia/", "note": "finanças"},
+        {"label": "saudeviral", "href": "https://inematds.github.io/saudeviral/guia/", "note": "saúde"},
+        {"label": "advviral", "href": "https://inematds.github.io/advviral/guia/", "note": "direito"}
+      ],
+      "cta_title": "Escolha o seu nicho",
+      "cta_text": "Use o finviral como molde e coloque o seu primeiro canal no automático, com portão de aprovação na primeira semana.",
+      "cta_label": "Abrir o finviral",
+      "cta_href": "https://inematds.github.io/finviral/guia/"
+    }
+  }
+}

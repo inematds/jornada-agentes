@@ -39,7 +39,7 @@ echo "List 3 risks of leaving an agent running on its own." > fila/entrada/02.md
 
 ## Videos
 
-Five videos (opening + one per sequence), in production, published on the INEMA FTD channel. Scripts (in Portuguese): [videos/roteiros.md](videos/roteiros.md).
+Five videos (opening + one per sequence), each with its own explanatory page in [serie/](https://inematds.github.io/jornada-agentes/serie/jornada-ia/en/) (PT/EN/ES). Scripts (in Portuguese): [videos/roteiros.md](videos/roteiros.md).
 
 ## Layout
 

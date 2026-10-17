@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Del chat al agente: 4 secuencias para entrar de lleno en la IA</title>
+<meta name="description" content="Resumen de la serie Del chat al agente: por qué el chat se queda corto, las 4 secuencias (OSWork, Jarvis, colas y redes automáticas), el orden correcto y por dónde empezar hoy. Abierto y gratuito.">
+<link rel="canonical" href="https://inematds.github.io/jornada-agentes/serie/jornada-ia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/jornada-agentes/serie/jornada-ia/"><link rel="alternate" hreflang="en" href="https://inematds.github.io/jornada-agentes/serie/jornada-ia/en/"><link rel="alternate" hreflang="es" href="https://inematds.github.io/jornada-agentes/serie/jornada-ia/es/">
+<meta property="og:title" content="Del chat al agente: 4 secuencias para entrar de lleno en la IA">
+<meta property="og:description" content="Resumen de la serie Del chat al agente: por qué el chat se queda corto, las 4 secuencias (OSWork, Jarvis, colas y redes automáticas), el orden correcto y por dónde empezar hoy. Abierto y gratuito.">
+<meta property="og:image" content="https://inematds.github.io/jornada-agentes/serie/assets/serie-jornada-ia-es.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#FACC15; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#a16207; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  body.light pre .k{color:#f0c070}
+  body.light .btn{background:#FACC15}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  body.light nav{background:rgba(246,247,249,.85)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(250,204,21,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:860px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(250,204,21,.18),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .card ul{margin:.6em 0 0;padding-left:1.1em;color:var(--mut);font-size:.92rem}
+  .card ul li{margin:.15em 0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(250,204,21,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:30px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  body.light .step .b{background:#FACC15}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex-list{list-style:none;margin:.4em 0 .8em;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;font-size:.93rem}
+  .ex-list li{padding-left:2.4em;text-indent:-2.4em}
+  .ex-list b{font-family:Sora;color:var(--amb);display:inline-block;width:2.2em;text-indent:0}
+  @media(max-width:620px){.ex-list{grid-template-columns:1fr}}
+  .links-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:.4em}
+  .links-row a{border:1px solid var(--line);border-radius:999px;padding:.35em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .links-row a:hover{border-color:var(--amb)}
+  .note{border-left:3px solid var(--amb);background:var(--bg2);padding:14px 18px;border-radius:0 12px 12px 0;color:var(--txt);max-width:74ch}
+  .cta-final{text-align:center}
+  .cta-final p{color:var(--mut);max-width:60ch;margin:.8em auto 1.6em}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+
+  .pular{position:absolute;left:-999px}.pular:focus{left:12px;top:12px;z-index:99;background:var(--amb);color:#1a1206;padding:.4em .8em;border-radius:10px}
+  nav.topo .lang a{padding:.2em .45em}
+  .seqnav{border-bottom:1px solid var(--line);background:var(--bg2)}
+  .seqnav .wrap{display:flex;gap:6px;overflow-x:auto;padding:8px 22px;scrollbar-width:thin}
+  .seqnav a{white-space:nowrap;color:var(--mut);font-family:Sora;font-weight:600;font-size:.85rem;padding:.35em .85em;border-radius:999px;border:1px solid transparent}
+  .seqnav a:hover{color:var(--txt)} .seqnav a.on{color:var(--amb);border-color:var(--line);background:var(--card)}
+  body.light .seqnav a.on{color:#1a1a22;background:#FEF9C3;border-color:#EAB308}
+  .txt{max-width:74ch;margin:.2em 0 1.2em}
+  .note{margin:1.4em 0 0}
+  .pedido{margin:1em 0;padding:16px 20px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-size:1.05rem;max-width:74ch}
+  .pedido::before{content:"“";color:var(--amb);font-family:Sora;font-weight:800;font-size:1.6rem;line-height:0;vertical-align:-.35em;margin-right:.2em}
+  pre{margin:1em 0 1.2em}
+  .flow{margin:.4em 0 1.4em}
+  .pills{display:flex;flex-wrap:wrap;gap:6px;margin:.2em 0 1.2em}
+  .pills .pill{font-size:.92rem;color:var(--txt);padding:.45em 1em;margin:0;font-family:Sora;font-weight:600}
+  .grid{margin:.4em 0 1.2em}
+  .lado-a h3{color:var(--mut)} .lado-b{border-color:rgba(250,204,21,.45)} .lado-b h3{color:var(--amb)}
+  body.light .lado-b{border-color:#EAB308} body.light .lado-b h3{color:#1a1a22}
+  .tabela{overflow-x:auto;margin:.4em 0 1.4em;border:1px solid var(--line);border-radius:14px}
+  table{border-collapse:collapse;width:100%;font-size:.95rem}
+  th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:Sora;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);background:var(--bg2)}
+  tr:last-child td{border-bottom:none}
+  .steps{margin:.6em 0 1em}
+  .player{margin:1.2em 0 1em;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000;aspect-ratio:16/9;position:relative}
+  .player video{width:100%;height:100%;display:block}
+  .player.pendente img{width:100%;height:100%;object-fit:cover;display:block;opacity:.35}
+  .player .aviso{position:absolute;inset:auto 0 0 0;padding:22px 24px;background:linear-gradient(transparent,rgba(0,0,0,.85) 40%);color:#e9e9ee;display:flex;flex-direction:column;gap:4px}
+  .player .aviso b{font-family:Sora;font-size:1.15rem;color:#FACC15}
+  .player .aviso span{max-width:62ch;font-size:.95rem}
+  .roteiro{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:4px 20px}
+  .roteiro summary{cursor:pointer;font-family:Sora;font-weight:600;padding:14px 0}
+  .roteiro ol{list-style:none;margin:0 0 12px;padding:0}
+  .roteiro li{border-top:1px solid var(--line);padding:14px 0}
+  .roteiro .cn{display:block;font-family:Sora;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb)}
+  .roteiro li b{font-family:Sora} .roteiro li p{margin:.3em 0 0;color:var(--mut);max-width:74ch}
+  .exs{list-style:none;padding:0;margin:.4em 0 1.4em;display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .exs li{display:flex;gap:14px;align-items:flex-start}
+  .exs .num{flex:none;margin:0;width:38px;height:30px}
+  .exs h3 small{font-family:Inter;font-weight:400;color:var(--mut);font-size:.85rem}
+  .exs p{margin-top:.3em}
+  @media(max-width:700px){.exs{grid-template-columns:1fr}}
+  a.card{display:block;color:var(--txt);transition:border-color .15s}
+  a.card:hover{border-color:var(--amb)}
+  a.mat h3{color:var(--amb)} body.light a.mat h3{color:#854d0e}
+  .seqcard{padding:0;overflow:hidden}
+  .seqcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+  .seqcard .num{margin:16px 20px .5em}
+  .seqcard h3,.seqcard p{padding:0 20px} .seqcard p{padding-bottom:20px}
+  @media(max-width:1000px){.seqs.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.seqs.g4{grid-template-columns:1fr}}
+  .prevnext{padding:30px 0;border-bottom:1px solid var(--line)}
+  .prevnext .wrap{display:flex;justify-content:space-between;gap:12px}
+  .pn{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:14px 18px;color:var(--txt);min-width:0;flex:1;max-width:48%}
+  .pn.dir{text-align:right;margin-left:auto} .pn small{color:var(--mut)} .pn b{font-family:Sora}
+  .pn:hover{border-color:var(--amb)}
+  body.light a{color:#854d0e} body.light .btn{color:#1a1206}
+  body.light .chip{color:#854d0e}
+  body.light .amb{color:#1a1a22;background:linear-gradient(transparent 55%,#FACC15 55%)}
+  @media(max-width:520px){.wrap{padding:0 16px}.seqnav .wrap{padding:8px 16px}}
+  .hero figure img{height:auto}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">↓</a>
+<nav class="topo"><div class="wrap">
+  <a class="brand" href="../../jornada-ia/es/"><span class="emoji">🧭</span> Jornada de los Agentes</a>
+  <span class="sep">|</span>
+  <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+  <div class="links">
+    <a class="sec" href="#video">Video</a>
+    <a class="sec" href="#como-funciona">Cómo funciona</a>
+    
+    <a class="sec" href="#materiais">Materiales</a>
+    <span class="lang"><a href="../" hreflang="pt">PT</a><a href="../en/" hreflang="en">EN</a><a href="../es/" hreflang="es" class="on">ES</a></span>
+    <button class="tgl" id="tgl" type="button" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema claro/oscuro">◐</button>
+  </div>
+</div></nav>
+<div class="seqnav"><div class="wrap"><a href="../../jornada-ia/es/" class="on" aria-current="page">Resumen</a><a href="../../seq1-oswork/es/">1 · OSWork</a><a href="../../seq2-jarvis/es/">2 · Jarvis</a><a href="../../seq3-filas/es/">3 · Colas</a><a href="../../seq4-redes/es/">4 · Redes</a></div></div>
+
+<header class="hero" id="top"><div class="glow"></div><div class="wrap">
+  <div>
+    <span class="chip">Serie · Del chat al agente</span>
+    <h1>Del chat al <span class="amb">agente</span>, en cuatro pasos</h1>
+    <p class="lead">Deja de copiar y pegar y crea agentes que trabajen por ti: en tu computadora, en una cola de tareas e en tus redes sociales.</p>
+    <div class="cta"><a class="btn" href="#video">Ver el video ↓</a><a class="btn ghost" href="../../seq1-oswork/es/">Ir a la secuencia 1 →</a></div>
+  </div>
+  <figure><img src="../../assets/serie-jornada-ia-es.jpg" alt="Del chat al agente: 4 secuencias para entrar de lleno en la IA" width="1400" height="788"></figure>
+</div></header>
+
+<main id="conteudo">
+<div class="resumo" id="resumo"><div class="wrap"><p>La mayoría de las personas se queda en el chat: pregunta, copia, pega y vuelve a preguntar. Esta serie muestra el camino completo para crear agentes que trabajan solos, em quatro sequências. Primero, la terminal y las carpetas (OSWork), luego, tu asistente no Telegram (INTELECTO), después, una cola de tareas que funciona mientras duermes (inemaccbot) y, por último, las redes sociales en automático. Cada secuencia incluye un curso, un proyecto abierto, un video y ejercicios con un criterio de conclusión.</p></div></div>
+
+<section id="video"><div class="wrap">
+  <span class="chip">El video</span>
+  <h2>Del chat al agente: 4 secuencias para entrar de lleno en la IA</h2>
+  <div class="player pendente"><img src="../../assets/serie-jornada-ia-es.jpg" alt="" loading="lazy"><div class="aviso"><b>Video en producción</b><span>El video de esta página se está grabando con el avatar de Nei y está en portugués, con subtítulos.</span></div></div>
+  
+</div></section>
+
+<section id="como-funciona"><div class="wrap"><span class="chip">El problema</span><h2>El chat se queda corto. El sistema sigue.</h2><p class="sub">En el chat, tú conduces todo el tiempo. Cuando cierras la ventana, el trabajo se detiene.</p><div class="grid g2"><div class="card lado-a"><h3>En el chat</h3><ul><li>Preguntas, copias, pegas y ajustas.</li><li>La IA no ve tus archivos.</li><li>Olvida lo que explicaste ayer.</li><li>Cierras la ventana y el trabajo se detiene.</li></ul></div><div class="card lado-b"><h3>Con un agente</h3><ul><li>Le das la tarea y revisas el resultado.</li><li>Lee y escribe los archivos de tu carpeta.</li><li>Lee las reglas del proyecto cada vez que empieza.</li><li>Sigue trabajando mientras haces otra cosa.</li></ul></div></div><p class="note">El cambio no consiste en aprender un modelo nuevo. Consiste en <b>cambiar de lugar</b>: pasar del chat al sistema.</p></div></section><section id="sequencias"><div class="wrap"><span class="chip">Las 4 secuencias</span><h2>El camino completo, paso a paso</h2><p class="sub">Cada paso se apoya en el anterior. Haz clic en una secuencia para ver su página.</p><div class="grid g4 seqs"><a class="card seqcard" href="../../seq1-oswork/es/"><img src="../../assets/serie-seq1-oswork-es.jpg" alt="" loading="lazy"><span class="num">1</span><h3>OSWork: do chat para o Terminal</h3><p>Carpetas, markdown, AGENTS.md y el agente (Claude Code o Codex) trabajando dentro de tu carpeta.</p></a><a class="card seqcard" href="../../seq2-jarvis/es/"><img src="../../assets/serie-seq2-jarvis-es.jpg" alt="" loading="lazy"><span class="num">2</span><h3>Tu Jarvis con INTELECTO</h3><p>Tu propio asistente en Telegram, con memoria y la personalidad que definas.</p></a><a class="card seqcard" href="../../seq3-filas/es/"><img src="../../assets/serie-seq3-filas-es.jpg" alt="" loading="lazy"><span class="num">3</span><h3>Colas: diez tareas y vete a dormir</h3><p>inemaccbot guarda cada tarea, la reanuda si algo falla y se detiene en la puerta cuando te necesita.</p></a><a class="card seqcard" href="../../seq4-redes/es/"><img src="../../assets/serie-seq4-redes-es.jpg" alt="" loading="lazy"><span class="num">4</span><h3>El canal viral de tu nicho</h3><p>r7e, promoavatar y los canales xviral: finviral, saudeviral y advviral publican con la fuente en pantalla.</p></a></div></div></section><section id="ordem"><div class="wrap"><span class="chip">El orden importa</span><h2>Sin milagros</h2><p class="sub">No existe «procesar mientras duermes» si el sistema no funciona correctamente.</p><div class="flow"><span>Carpeta y terminal</span><span class="arr" aria-hidden="true">→</span><span>Asistente</span><span class="arr" aria-hidden="true">→</span><span>Cola</span><span class="arr" aria-hidden="true">→</span><span>Redes automáticas</span></div><p class="txt">Quien se salta la secuencia 1 se atasca en las otras tres. Las carpetas, la terminal y los comandos sencillos son la base de todo lo que viene después: Jarvis necesita un archivo de configuración y una clave guardada en el lugar correcto; la cola necesita un proyecto organizado, y el canal automático necesita una cola y una puerta de aprobación.</p><div class="tabela"><table><thead><tr><th>Tu situación hoy</th><th>Empieza por</th></tr></thead><tbody><tr><td>Solo uso el chat (ChatGPT, Claude, Gemini)</td><td><a href="../../seq1-oswork/es/">Secuencia 1 · OSWork</a></td></tr><tr><td>Ya uso la terminal y Claude Code o Codex</td><td><a href="../../seq2-jarvis/es/">Secuencia 2 · tu Jarvis</a></td></tr><tr><td>Ya tengo un asistente funcionando</td><td><a href="../../seq3-filas/es/">Secuencia 3 · colas</a></td></tr><tr><td>Ya tengo una cola y quiero publicar</td><td><a href="../../seq4-redes/es/">Secuencia 4 · redes</a></td></tr></tbody></table></div></div></section>
+
+<section id="materiais"><div class="wrap"><span class="chip">Materiales</span><h2>Cursos, proyectos y guías</h2>
+<p class="sub">Todo es abierto y gratuito. Empieza por el primero de la lista.</p><div class="grid g3"><a class="card mat" href="https://inematds.github.io/jornada-agentes/guia/" target="_blank" rel="noopener"><h3>Guia da Jornada de los Agentes →</h3><p>los 23 ejercicios en un solo lugar</p></a><a class="card mat" href="https://inematds.github.io/oswork-quick/" target="_blank" rel="noopener"><h3>OSWork Quick →</h3><p>El primer paso, en siete lecciones</p></a><a class="card mat" href="https://eventos.inema.pro/do-chat-ao-agente/" target="_blank" rel="noopener"><h3>Área Del chat al agente →</h3><p>eventos INEMA</p></a><a class="card mat" href="https://github.com/inematds/jornada-agentes" target="_blank" rel="noopener"><h3>Repositorio en GitHub →</h3><p>ejercicios y una cola casera</p></a></div></div></section>
+
+<section class="cta-final"><div class="wrap"><h2>Empieza hoy por la secuencia 1</h2><p>Los cursos, las guías y los proyectos de cada secuencia están en INEMA.CLUB, abiertos y gratuitos. Sal del chat y empieza a crear tus agentes.</p>
+<a class="btn" href="../../seq1-oswork/es/">Ir a la secuencia 1 →</a></div></section>
+
+<div class="prevnext"><div class="wrap"><span></span><a class="pn dir" href="../../seq1-oswork/es/"><small>Siguiente →</small><b>1 · OSWork</b></a></div></div>
+</main>
+<footer><div class="wrap">Serie «Del chat al agente» · INEMA · contenido abierto y gratuito · <a href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a> · <a href="https://github.com/inematds/jornada-agentes" target="_blank" rel="noopener">GitHub</a></div></footer>
+<script>
+(function(){var b=document.body,k='jornada-tema';try{if(localStorage.getItem(k)==='light')b.classList.add('light')}catch(e){}
+var t=document.getElementById('tgl');if(t)t.addEventListener('click',function(){b.classList.toggle('light');
+try{localStorage.setItem(k,b.classList.contains('light')?'light':'dark')}catch(e){}});})();
+</script>
+</body>
+</html>

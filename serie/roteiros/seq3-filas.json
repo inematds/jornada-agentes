@@ -1,0 +1,37 @@
+[
+ {
+  "chapter": "Gancho",
+  "title": "Dez tarefas e vá dormir",
+  "speech": "Mande dez tarefas para os seus agentes, vá dormir, e acorde com o trabalho pronto, cada etapa conferida. Essa é a sequência três: filas. Neste vídeo: por que um agente sozinho não basta, como funciona a fila do inemaccbot, e no fim, o portão que impede o agente de seguir sem você."
+ },
+ {
+  "chapter": "O problema",
+  "title": "Um agente sozinho se perde",
+  "speech": "Um agente no terminal faz uma coisa por vez, e só enquanto você está olhando. Se a internet cai ou a máquina reinicia, o trabalho se perde. E se você pede dez coisas ao mesmo tempo, elas se atropelam. Para trabalhar sozinho, o agente precisa de uma fila."
+ },
+ {
+  "chapter": "A fila",
+  "title": "Fila durável",
+  "speech": "O inemaccbot é um bot de Telegram com fila durável. Cada pedido vira uma tarefa guardada num banco SQLite. A tarefa é pega com um sinal de vida enquanto roda. Se cair, ela volta para a fila e é retomada. Nada se perde."
+ },
+ {
+  "chapter": "As skills",
+  "title": "O que vai na fila",
+  "speech": "E o que vai na fila? Skills que rodam como agente: transcrever, dublar, vídeo explicativo, curso, demonstração, reel. Você manda o pedido pelo Telegram. O motor padrão é o Claude Code, com o Codex ou o OpenCode como alternativa."
+ },
+ {
+  "chapter": "O portão",
+  "title": "Automático, com você no comando",
+  "speech": "O passo seguinte são os fluxos: várias fases em sequência, com o estado guardado em cada uma. No meio, um portão humano. O bot escreve os textos e para. Você lê, e só quando aprova ele segue para o avatar, o download e o vídeo. Automático, mas com você no comando."
+ },
+ {
+  "chapter": "Gestão",
+  "title": "De quem faz a quem gerencia",
+  "speech": "É aqui que você deixa de ser quem faz para ser quem gerencia. Você define as tarefas, os portões e as regras. Os agentes executam na fila, e você decide nos pontos que importam."
+ },
+ {
+  "chapter": "Comece hoje",
+  "title": "Monte a sua fila",
+  "speech": "Com a fila de pé, dá para colocar as redes sociais no automático: a sequência quatro. O inemaccbot, o guia e a arquitetura completa estão no INEMA ponto CLUB, abertos e gratuitos. Monte a sua fila e mande a primeira tarefa."
+ }
+]

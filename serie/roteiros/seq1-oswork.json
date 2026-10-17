@@ -1,0 +1,37 @@
+[
+ {
+  "chapter": "Gancho",
+  "title": "Um agente dentro das suas pastas",
+  "speech": "Com meia dúzia de comandos você sai do chat e coloca um agente para trabalhar dentro das suas pastas. Essa é a sequência um, o OSWork, e ela separa quem usa inteligência artificial de quem cria com ela. Neste vídeo: por que o chat trava, os passos do terminal, e no fim, o primeiro pedido para o seu agente."
+ },
+ {
+  "chapter": "O chat trava",
+  "title": "Você vira o carteiro",
+  "speech": "No chat, a inteligência artificial não enxerga os seus arquivos, esquece o que você explicou ontem, e cada resposta precisa ser copiada e colada. Você vira o carteiro entre a janela e o seu trabalho. O OSWork mostra o caminho em três janelas: o Chat, o Work e o Desktop. E depois o terminal, onde o agente mora."
+ },
+ {
+  "chapter": "O terminal",
+  "title": "Só outra janela",
+  "speech": "O terminal assusta, mas é só outra janela. Você digita um comando e ele responde. Com seis comandos você navega: ver onde está, listar, entrar numa pasta, voltar, criar uma pasta, abrir um arquivo. Não é programar. É andar pelas suas pastas sem o mouse."
+ },
+ {
+  "chapter": "Pastas",
+  "title": "Uma pasta, um AGENTS.md",
+  "speech": "O segredo está nas pastas. Uma pasta por projeto, e dentro dela arquivos de texto em markdown. Um deles é o AGENTS ponto MD: as regras do projeto, quem você é, o que pode e o que não pode. O agente lê esse arquivo toda vez que começa. É como entregar o manual para um funcionário novo."
+ },
+ {
+  "chapter": "O agente",
+  "title": "Você dá a tarefa",
+  "speech": "Agora o agente. Você entra na pasta do projeto e chama o Claude Code ou o Codex. Pede: crie uma página simples sobre mim e um arquivo com as regras deste projeto. Os arquivos aparecem na pasta. Você não programou nada. Deu a tarefa, conferiu o resultado e decidiu. Isso é gestão."
+ },
+ {
+  "chapter": "Segurança",
+  "title": "Git, segredos e VPS",
+  "speech": "Depois vem a segurança. O Git guarda cada versão, e se o agente errar, você volta. As chaves e senhas ficam fora do texto, num arquivo de segredos. E no fim do percurso, o Telegram vira a interface, e uma VPS deixa o agente rodando mesmo com o seu computador desligado."
+ },
+ {
+  "chapter": "Comece hoje",
+  "title": "O degrau que destrava tudo",
+  "speech": "Esse é o degrau que destrava as outras três sequências: o Jarvis, as filas e as redes no automático. O OSWork completo, comando por comando, está no INEMA ponto CLUB, aberto e gratuito. Abra o terminal hoje, crie a sua primeira pasta, e dê a primeira tarefa para o seu agente."
+ }
+]

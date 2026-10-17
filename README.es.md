@@ -39,7 +39,7 @@ echo "Enumera 3 riesgos de dejar un agente funcionando solo." > fila/entrada/02.
 
 ## Videos
 
-Cinco videos (apertura + uno por secuencia), en producción, publicados en el canal INEMA FTD. Guiones (en portugués): [videos/roteiros.md](videos/roteiros.md).
+Cinco videos (apertura + uno por secuencia), cada uno con su página explicativa en [serie/](https://inematds.github.io/jornada-agentes/serie/jornada-ia/es/) (PT/EN/ES). Guiones (en portugués): [videos/roteiros.md](videos/roteiros.md).
 
 ## Estructura
 

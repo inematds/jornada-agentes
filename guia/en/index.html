@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Journey — from chat to agent builder in 4 sequences</title>
+<meta name="description" content="INEMA series in 4 sequences to leave the chat and build agents: OSWork (terminal), Jarvis (INTELECTO), queues (inemaccbot) and social media on autopilot. Hands-on exercises with a clear done-when check, open and free.">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/jornada-agentes/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/jornada-agentes/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/jornada-agentes/guia/es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#FACC15; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#a16207; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  body.light pre .k{color:#f0c070}
+  body.light .btn{background:#FACC15}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  body.light nav{background:rgba(246,247,249,.85)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(250,204,21,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:860px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(250,204,21,.18),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .card ul{margin:.6em 0 0;padding-left:1.1em;color:var(--mut);font-size:.92rem}
+  .card ul li{margin:.15em 0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(250,204,21,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:30px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  body.light .step .b{background:#FACC15}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex-list{list-style:none;margin:.4em 0 .8em;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;font-size:.93rem}
+  .ex-list li{padding-left:2.4em;text-indent:-2.4em}
+  .ex-list b{font-family:Sora;color:var(--amb);display:inline-block;width:2.2em;text-indent:0}
+  @media(max-width:620px){.ex-list{grid-template-columns:1fr}}
+  .links-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:.4em}
+  .links-row a{border:1px solid var(--line);border-radius:999px;padding:.35em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .links-row a:hover{border-color:var(--amb)}
+  .note{border-left:3px solid var(--amb);background:var(--bg2);padding:14px 18px;border-radius:0 12px 12px 0;color:var(--txt);max-width:74ch}
+  .cta-final{text-align:center}
+  .cta-final p{color:var(--mut);max-width:60ch;margin:.8em auto 1.6em}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">🧭</span> Agent Journey</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#oque">What it is</a>
+    <a class="sec" href="#sequencias">Sequences</a>
+    <a class="sec" href="#guia">Exercises</a>
+    <a class="sec" href="#fila">Your own queue</a>
+    <a class="sec" href="#links">Courses</a>
+    <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+    <a class="btn" href="https://github.com/inematds/jornada-agentes" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">INEMA Series · 4 sequences</span>
+      <h1>From Chat to <span class="amb">Agent Creator</span></h1>
+      <p class="lead">The terminal, your Jarvis, queues, and automated social media. One step at a time, with exercises that tell you when you’re done.</p>
+      <div class="cta">
+        <a class="btn" href="#guia">Start with the exercises</a>
+        <a class="btn ghost" href="https://github.com/inematds/jornada-agentes" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+    <figure><img src="../assets/banner-en.jpg" alt="From Chat to Agent Creator: learn fast in 4 sequences — OSWork, Jarvis, queues, and social media"></figure>
+  </div>
+</header>
+
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">In brief</span>
+  <p>This repository brings together the exercises from the INEMA series “From Chat to Agent Creator.” It has four sequences, in order: use an agent in the terminal, build a personal assistant on Telegram, put tasks in a queue that runs on its own, and automate social media with your approval. It’s for people who already use AI chat and want it to work independently. Each exercise has a “Done when” criterion to show you when you’re finished. You need a computer, a terminal, and Claude Code or Codex.</p>
+</div></section>
+
+<section id="oque"><div class="wrap">
+  <span class="chip">What it is</span>
+  <h2>Four steps to move beyond chat</h2>
+  <p class="sub">In chat, you’re the driver the whole time: ask, copy, paste, adjust. An agent reads your files, carries out tasks, and keeps working while you do something else. The shift is about changing where you work: from chat to the system.</p>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-en.jpg" alt="From Chat to Agent Creator: terminal, AGENTS.md, your Jarvis, durable queue, human approval gate, and automated social media" loading="lazy" style="width:100%;display:block"></figure>
+  <div class="grid g3">
+    <div class="card"><h3>🪜 Order matters</h3><p>Without sequence 1, the others won’t hold up. Start with folders and the terminal, then the assistant, then the queue, and only then social media.</p></div>
+    <div class="card"><h3>⚙️ No magic</h3><p>Nothing renders while you sleep if the system isn’t running correctly. Without a queue and an approval gate, social media automation just means posting mistakes faster.</p></div>
+    <div class="card"><h3>✅ Done when</h3><p>Each exercise ends with a criterion you can check: the page opens, <code>git status</code> doesn’t show <code>.env</code>, the bot remembers you.</p></div>
+  </div>
+</div></section>
+
+<section id="sequencias"><div class="wrap">
+  <span class="chip">The 4 sequences</span>
+  <h2>The whole journey, in order</h2>
+  <p class="sub">Each sequence builds on the previous one. Follow them in order, and move on only when you’ve completed the exercises in that stage.</p>
+  <div class="flow">
+    <span>1 · OSWork: terminal</span><span class="arr">→</span>
+    <span>2 · Jarvis: INTELECTO</span><span class="arr">→</span>
+    <span>3 · Queues: inemaccbot</span><span class="arr">→</span>
+    <span>4 · Automated social media</span>
+  </div>
+  <div class="grid g4" style="margin-top:26px">
+    <div class="card"><div class="num">1</div><h3>💻 From chat to the terminal</h3><p>Folders, AGENTS.md, Claude Code or Codex working inside the folder, Git as a safety net, and secrets in <code>.env</code>.</p></div>
+    <div class="card"><div class="num">2</div><h3>🤖 Your Jarvis</h3><p>INTELECTO: a personal assistant in Python on Telegram, with memory and the personality you define. Cloud model (OpenRouter) or local (Ollama).</p></div>
+    <div class="card"><div class="num">3</div><h3>📥 Agent queues</h3><p>inemaccbot: a Telegram bot with a durable SQLite queue, recovery after a crash, agent skills, and workflows that pause at a gate for your approval.</p></div>
+    <div class="card"><div class="num">4</div><h3>📣 Automated social media</h3><p>r7e (a reel in 7 steps), promoavatar, and xviral (finviral, saudeviral, advviral): sourced numbers, your face, and regular publishing.</p></div>
+  </div>
+</div></section>
+
+<section id="guia"><div class="wrap">
+  <span class="chip">Exercises · step by step</span>
+  <h2>Exercises for each sequence</h2>
+  <p class="sub">These are extra exercises to do alongside the courses. Each one has an estimated time and a "Done when" criterion. Open the file on GitHub and follow the order.</p>
+
+  <div class="step"><div class="b">1</div><div>
+    <h3>Sequence 1 — From chat to the terminal (OSWork)</h3>
+    <p>Goal: get an agent working inside one of your folders.</p>
+    <ul class="ex-list">
+      <li><b>E1</b>Your first folder in the terminal</li>
+      <li><b>E2</b>The employee handbook: AGENTS.md</li>
+      <li><b>E3</b>Your first task</li>
+      <li><b>E4</b>The safety net: Git</li>
+      <li><b>E5</b>Secrets don't belong in the text</li>
+      <li><b>E6</b>The agent reads your files</li>
+    </ul>
+    <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/01-oswork.md" target="_blank" rel="noopener">Open exercises 01-oswork.md</a><a href="https://inematds.github.io/oswork-quick/" target="_blank" rel="noopener">OSWork course</a><a href="https://eventos.inema.pro/oswork/" target="_blank" rel="noopener">OSWork area</a></div>
+  </div></div>
+
+  <div class="step"><div class="b">2</div><div>
+    <h3>Sequence 2 — Build your Jarvis (INTELECTO)</h3>
+    <p>Goal: your own assistant that talks through Telegram, remembers conversations, and has your personality.</p>
+    <ul class="ex-list">
+      <li><b>E1</b>Design your Jarvis before installing</li>
+      <li><b>E2</b>The bot on Telegram</li>
+      <li><b>E3</b>Install</li>
+      <li><b>E4</b>Memory test</li>
+      <li><b>E5</b>Cloud or local</li>
+      <li><b>E6</b>A real routine</li>
+    </ul>
+<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/intelecto.git</span>
+<span class="k">cd</span> intelecto
+<span class="k">./start.sh</span>   <span class="c"># the assistant asks for the Telegram token, model, and personality</span></pre>
+    <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/02-jarvis.md" target="_blank" rel="noopener">Open exercises 02-jarvis.md</a><a href="https://inematds.github.io/intelecto/" target="_blank" rel="noopener">INTELECTO</a><a href="https://inematds.github.io/intelecto-curso/" target="_blank" rel="noopener">INTELECTO course</a><a href="https://eventos.inema.pro/jarvis/" target="_blank" rel="noopener">Jarvis area</a></div>
+  </div></div>
+
+  <div class="step"><div class="b">3</div><div>
+    <h3>Sequence 3 — Agent queues (inemaccbot)</h3>
+    <p>Goal: send several tasks, step away, and find the work done, with a gate where you need to be involved.</p>
+    <ul class="ex-list">
+      <li><b>E1</b>The queue on paper</li>
+      <li><b>E2</b>A homegrown queue in 30 lines</li>
+      <li><b>E3</b>Install inemaccbot</li>
+      <li><b>E4</b>Ten tasks, then go to sleep</li>
+      <li><b>E5</b>The gate</li>
+    </ul>
+    <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/03-filas.md" target="_blank" rel="noopener">Open exercises 03-filas.md</a><a href="https://inematds.github.io/inemaccbot/guia/" target="_blank" rel="noopener">inemaccbot guide</a><a href="https://eventos.inema.pro/inemaccbot.html" target="_blank" rel="noopener">inemaccbot course</a></div>
+  </div></div>
+
+  <div class="step"><div class="b">4</div><div>
+    <h3>Sequence 4 — Social media on autopilot</h3>
+    <p>Goal: your niche channel publishing regularly, with numbers, sources, and your face, while you approve what matters.</p>
+    <ul class="ex-list">
+      <li><b>E1</b>A reel in 7 steps, on paper</li>
+      <li><b>E2</b>The top 5 in your niche</li>
+      <li><b>E3</b>The source-backed foundation</li>
+      <li><b>E4</b>A 60-second script with the source on screen</li>
+      <li><b>E5</b>The schedule</li>
+      <li><b>E6</b>The gate before publishing</li>
+    </ul>
+    <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/04-redes.md" target="_blank" rel="noopener">Open exercises 04-redes.md</a><a href="https://inematds.github.io/reel7etapas/guia/" target="_blank" rel="noopener">reel7etapas</a><a href="https://inematds.github.io/promoavatar/guia/" target="_blank" rel="noopener">promoavatar</a><a href="https://inematds.github.io/promoavatar3/guia/" target="_blank" rel="noopener">promoavatar3</a><a href="https://inematds.github.io/finviral/guia/" target="_blank" rel="noopener">finviral</a><a href="https://inematds.github.io/saudeviral/guia/" target="_blank" rel="noopener">saudeviral</a><a href="https://inematds.github.io/advviral/guia/" target="_blank" rel="noopener">advviral</a></div>
+  </div></div>
+</div></section>
+
+<section id="fila"><div class="wrap">
+  <span class="chip">Tool · homegrown queue</span>
+  <h2>A task queue in 30 lines</h2>
+  <p class="sub">Before using inemaccbot, understand the idea with <code>ferramentas/fila-caseira.sh</code> from this repository. Each file in <code>entrada/</code> becomes a task; the response goes to <code>feito/</code>; any task that errors goes to <code>falhou/</code>. Running it again picks up only what remains.</p>
+  <div class="flow" style="margin-bottom:22px">
+    <span>entrada/</span><span class="arr">→</span>
+    <span>rodando/</span><span class="arr">→</span>
+    <span>feito/ or falhou/</span>
+  </div>
+<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/jornada-agentes.git</span>
+<span class="k">cd</span> jornada-agentes
+<span class="k">mkdir</span> -p fila/entrada
+<span class="k">echo</span> <span class="s">"Summarize what a task queue is in 5 lines."</span> &gt; fila/entrada/01.md
+<span class="k">echo</span> <span class="s">"List 3 risks of leaving an agent running on its own."</span> &gt; fila/entrada/02.md
+<span class="k">./ferramentas/fila-caseira.sh</span> fila          <span class="c"># default engine: claude</span>
+<span class="k">./ferramentas/fila-caseira.sh</span> fila codex    <span class="c"># or Codex, through your subscription</span></pre>
+  <p class="note">Resuming: if a run stops or you press Ctrl+C, the task in <code>rodando/</code> returns to <code>entrada/</code> on the next run. It’s the same idea as inemaccbot’s durable queue, in pocket size. <a href="https://github.com/inematds/jornada-agentes/blob/main/ferramentas/fila-caseira.sh" target="_blank" rel="noopener">View the script</a></p>
+</div></section>
+
+<section id="videos"><div class="wrap">
+  <span class="chip">Series videos</span>
+  <h2>Five videos, one for each step</h2>
+  <p class="sub">An opening video covering the entire journey, plus one video for each sequence. They are in production and will be published on the INEMA FTD channel. The scripts are already in the repository.</p>
+  <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/videos/roteiros.md" target="_blank" rel="noopener">Read the scripts (videos/roteiros.md) (in Portuguese)</a></div>
+</div></section>
+
+<section id="links"><div class="wrap">
+  <span class="chip">Courses, projects, and areas</span>
+  <h2>Where to learn each sequence</h2>
+  <p class="sub">The exercises in this repository are supplementary. The main content for each sequence is in the courses and guides below.</p>
+  <div class="grid g2">
+    <div class="card"><h3>💻 1 · OSWork</h3><ul><li><a href="https://inematds.github.io/oswork-quick/" target="_blank" rel="noopener">OSWork course</a></li><li><a href="https://eventos.inema.pro/oswork/" target="_blank" rel="noopener">OSWork area on eventos</a></li></ul></div>
+    <div class="card"><h3>🤖 2 · Jarvis</h3><ul><li><a href="https://inematds.github.io/intelecto/" target="_blank" rel="noopener">INTELECTO guide</a></li><li><a href="https://inematds.github.io/intelecto-curso/" target="_blank" rel="noopener">INTELECTO course</a></li><li><a href="https://eventos.inema.pro/jarvis/" target="_blank" rel="noopener">Jarvis area on eventos</a></li></ul></div>
+    <div class="card"><h3>📥 3 · Queues</h3><ul><li><a href="https://inematds.github.io/inemaccbot/guia/" target="_blank" rel="noopener">inemaccbot guide</a></li><li><a href="https://eventos.inema.pro/inemaccbot.html" target="_blank" rel="noopener">inemaccbot course on eventos</a></li></ul></div>
+    <div class="card"><h3>📣 4 · Social media</h3><ul><li><a href="https://inematds.github.io/reel7etapas/guia/" target="_blank" rel="noopener">reel7etapas (r7e)</a> · <a href="https://inematds.github.io/promoavatar/guia/" target="_blank" rel="noopener">promoavatar</a> · <a href="https://inematds.github.io/promoavatar3/guia/" target="_blank" rel="noopener">promoavatar3</a></li><li><a href="https://inematds.github.io/finviral/guia/" target="_blank" rel="noopener">finviral</a> · <a href="https://inematds.github.io/saudeviral/guia/" target="_blank" rel="noopener">saudeviral</a> · <a href="https://inematds.github.io/advviral/guia/" target="_blank" rel="noopener">advviral</a></li></ul></div>
+  </div>
+  <p class="sub" style="margin-top:22px">Series page on eventos: <a href="https://eventos.inema.pro/do-chat-ao-agente/" target="_blank" rel="noopener">eventos.inema.pro/do-chat-ao-agente</a></p>
+</div></section>
+
+<section class="cta-final"><div class="wrap">
+  <span class="chip">Get started today</span>
+  <h2>Start with <span class="amb">sequence 1</span></h2>
+  <p>The courses, guides, and projects for each sequence are on INEMA.CLUB, open and free. Move beyond chat and start creating your own agents.</p>
+  <div class="cta" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    <a class="btn" href="https://inema.club" target="_blank" rel="noopener">Go to INEMA.CLUB</a>
+    <a class="btn ghost" href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/01-oswork.md" target="_blank" rel="noopener">First exercise</a>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">OSWork</div><div class="pill">INTELECTO</div><div class="pill">inemaccbot</div><div class="pill">r7e · promoavatar · xviral</div>
+    <p style="margin-top:18px">Agent Journey · open and free ·
+      <a href="https://github.com/inematds/jornada-agentes">inematds/jornada-agentes</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='jornada-agentes-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>
+

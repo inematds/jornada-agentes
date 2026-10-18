@@ -1,0 +1,32 @@
+{
+ "jornada-ia": {
+  "url": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
+  "srt": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.srt",
+  "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/jornada-ia.vtt",
+  "duration": 147.54
+ },
+ "seq1-oswork": {
+  "url": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq1-oswork-16x9.mp4",
+  "srt": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq1-oswork-16x9.srt",
+  "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq1-oswork.vtt",
+  "duration": 111.94
+ },
+ "seq2-jarvis": {
+  "url": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq2-jarvis-16x9.mp4",
+  "srt": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq2-jarvis-16x9.srt",
+  "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq2-jarvis.vtt",
+  "duration": 93.26
+ },
+ "seq3-filas": {
+  "url": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.mp4",
+  "srt": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.srt",
+  "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq3-filas.vtt",
+  "duration": 92.82
+ },
+ "seq4-redes": {
+  "url": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
+  "srt": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.srt",
+  "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq4-redes.vtt",
+  "duration": 101.86
+ }
+}

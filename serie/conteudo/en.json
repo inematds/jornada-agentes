@@ -381,7 +381,7 @@
       "h1": "Create your <span class=\"amb\">Jarvis</span>",
       "lead": "A personal assistant that talks with you on Telegram, remembers your conversations, and has the personality you choose.",
       "description": "Sequence 2 of the From chat to agent series: INTELECTO, a personal Python assistant that chats on Telegram, with memory and a cloud model (OpenRouter) or local model (Ollama). Setup, exercises, and course, open and free.",
-      "resumo": "INTELECTO is a personal assistant written from scratch in Python, kept small on purpose so you can read, understand, and change it. It receives your messages on Telegram, thinks in an agent loop, searches memory, uses tools, and replies with a cloud model (OpenRouter) or one on your computer (Ollama). Setup takes one command and a six-step configuration assistant. It comes after OSWork because it uses the terminal, folders, and a key stored in the right place.",
+      "resumo": "INTELECTO is a personal assistant written from scratch in Python, small on purpose so you can read it, understand it and change it. It receives your messages on Telegram, thinks in an agent loop, searches memory, uses tools and replies with a model in the cloud (OpenRouter) or on your computer (Ollama). There is no installer: the agent builds yours from a briefing, with tests. It comes after OSWork because it uses the terminal, folders and a key stored in the right place.",
       "sections": [
         {
           "id": "como-funciona",
@@ -444,35 +444,35 @@
         {
           "id": "instalar",
           "chip": "Install",
-          "h2": "One command and six steps",
-          "sub": "start.sh sets up the environment and opens the configuration assistant.",
+          "h2": "Briefing, agent, and tests",
+          "sub": "INTELECTO has no installer: the agent builds your assistant from a briefing. Start by proving the repository's example.",
           "blocks": [
             {
               "type": "code",
-              "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto\n./start.sh"
+              "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto/exemplo-jarvis\npython3 -m unittest discover -s . -p 'test_*.py' -v\npython3 smoke.py"
             },
             {
               "type": "steps",
               "items": [
                 {
-                  "title": "Create the bot on Telegram",
-                  "text": "Open @BotFather, send /newbot, choose a name and @username, and copy the token."
+                  "title": "Prove the example",
+                  "text": "Run the 9 tests and the smoke.py of the exemplo-jarvis. It needs no key and no internet."
                 },
                 {
-                  "title": "Paste the token",
-                  "text": "The assistant checks that the token is valid and shows your bot's name."
+                  "title": "Export the briefing",
+                  "text": "On the INTELECTO comparison page, tick the ingredients and download your .md briefing."
                 },
                 {
-                  "title": "Choose the model",
-                  "text": "Cloud through OpenRouter or local through Ollama."
+                  "title": "Create the Telegram bot",
+                  "text": "Open @BotFather, send /newbot, choose a name and a username, and copy the token into the .env."
                 },
                 {
-                  "title": "Set its name and personality",
-                  "text": "How it talks: formal, direct, or funny."
+                  "title": "Ask for the build",
+                  "text": "Hand the briefing to Claude Code or Codex and ask it to build from it and from doc/intelecto.md, with tests."
                 },
                 {
                   "title": "Send \"hi\"",
-                  "text": "Your bot replies with the name and style you chose."
+                  "text": "Your bot replies with the name and the way of speaking you defined."
                 }
               ]
             },

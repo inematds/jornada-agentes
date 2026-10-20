@@ -205,14 +205,15 @@
     <ul class="ex-list">
       <li><b>E1</b>Diseña tu Jarvis antes de instalarlo</li>
       <li><b>E2</b>El bot en Telegram</li>
-      <li><b>E3</b>Instalar</li>
+      <li><b>E3</b>Construir</li>
       <li><b>E4</b>Prueba de memoria</li>
       <li><b>E5</b>Nube o local</li>
       <li><b>E6</b>Una rutina de verdad</li>
     </ul>
 <pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/intelecto.git</span>
-<span class="k">cd</span> intelecto
-<span class="k">./start.sh</span>   <span class="c"># el asistente pide el token de Telegram, el modelo y la personalidad</span></pre>
+<span class="k">cd</span> intelecto/exemplo-jarvis
+<span class="k">python3 -m unittest</span> discover -s . -p 'test_*.py' -v
+<span class="k">python3</span> smoke.py   <span class="c"># ejemplo listo: 9 pruebas, sin clave; después tu agente construye el tuyo a partir del briefing</span></pre>
     <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/es/02-jarvis.md" target="_blank" rel="noopener">Abrir ejercicios 02-jarvis.md</a><a href="https://inematds.github.io/intelecto/" target="_blank" rel="noopener">INTELECTO</a><a href="https://inematds.github.io/intelecto-curso/" target="_blank" rel="noopener">Curso INTELECTO</a><a href="https://eventos.inema.pro/jarvis/" target="_blank" rel="noopener">Área Jarvis</a></div>
   </div></div>
 
@@ -222,7 +223,7 @@
     <ul class="ex-list">
       <li><b>E1</b>La fila en papel</li>
       <li><b>E2</b>Una fila casera en 30 líneas</li>
-      <li><b>E3</b>Instalar inemaccbot</li>
+      <li><b>E3</b>Construir inemaccbot</li>
       <li><b>E4</b>Diez tareas y a dormir</li>
       <li><b>E5</b>La puerta</li>
     </ul>

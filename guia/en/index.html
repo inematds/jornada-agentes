@@ -205,14 +205,15 @@
     <ul class="ex-list">
       <li><b>E1</b>Design your Jarvis before installing</li>
       <li><b>E2</b>The bot on Telegram</li>
-      <li><b>E3</b>Install</li>
+      <li><b>E3</b>Build</li>
       <li><b>E4</b>Memory test</li>
       <li><b>E5</b>Cloud or local</li>
       <li><b>E6</b>A real routine</li>
     </ul>
 <pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/intelecto.git</span>
-<span class="k">cd</span> intelecto
-<span class="k">./start.sh</span>   <span class="c"># the assistant asks for the Telegram token, model, and personality</span></pre>
+<span class="k">cd</span> intelecto/exemplo-jarvis
+<span class="k">python3 -m unittest</span> discover -s . -p 'test_*.py' -v
+<span class="k">python3</span> smoke.py   <span class="c"># ready-made example: 9 tests, no key; then your agent builds yours from the briefing</span></pre>
     <div class="links-row"><a href="https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/02-jarvis.md" target="_blank" rel="noopener">Open exercises 02-jarvis.md</a><a href="https://inematds.github.io/intelecto/" target="_blank" rel="noopener">INTELECTO</a><a href="https://inematds.github.io/intelecto-curso/" target="_blank" rel="noopener">INTELECTO course</a><a href="https://eventos.inema.pro/jarvis/" target="_blank" rel="noopener">Jarvis area</a></div>
   </div></div>
 
@@ -222,7 +223,7 @@
     <ul class="ex-list">
       <li><b>E1</b>The queue on paper</li>
       <li><b>E2</b>A homegrown queue in 30 lines</li>
-      <li><b>E3</b>Install inemaccbot</li>
+      <li><b>E3</b>Build inemaccbot</li>
       <li><b>E4</b>Ten tasks, then go to sleep</li>
       <li><b>E5</b>The gate</li>
     </ul>

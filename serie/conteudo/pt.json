@@ -192,7 +192,7 @@
       "h1": "Crie o seu <span class=\"amb\">Jarvis</span>",
       "lead": "Um assistente pessoal que fala com você pelo Telegram, lembra das conversas e tem a personalidade que você escolher.",
       "description": "Sequência 2 da série Do chat ao agente: o INTELECTO, assistente pessoal em Python que conversa pelo Telegram, com memória, modelo na nuvem (OpenRouter) ou local (Ollama). Instalação, exercícios e curso, abertos e gratuitos.",
-      "resumo": "O INTELECTO é um assistente pessoal escrito do zero em Python, pequeno de propósito para você conseguir ler, entender e mudar. Ele recebe as suas mensagens no Telegram, pensa num laço de agente, busca na memória, usa ferramentas e responde com um modelo na nuvem (OpenRouter) ou no seu computador (Ollama). A instalação é um comando e um assistente de configuração em seis passos. Ele vem depois do OSWork porque usa terminal, pastas e uma chave guardada no lugar certo.",
+      "resumo": "O INTELECTO é um assistente pessoal escrito do zero em Python, pequeno de propósito para você conseguir ler, entender e mudar. Ele recebe as suas mensagens no Telegram, pensa num laço de agente, busca na memória, usa ferramentas e responde com um modelo na nuvem (OpenRouter) ou no seu computador (Ollama). Não há instalador: o agente constrói o seu a partir de um briefing, com testes. Ele vem depois do OSWork porque usa terminal, pastas e uma chave guardada no lugar certo.",
       "sections": [
         {
           "id": "como-funciona",
@@ -220,15 +220,15 @@
         {
           "id": "instalar",
           "chip": "Instalar",
-          "h2": "Um comando e seis passos",
-          "sub": "O start.sh prepara o ambiente e abre o assistente de configuração.",
+          "h2": "Briefing, agente e testes",
+          "sub": "O INTELECTO não tem instalador: o agente constrói o seu assistente a partir de um briefing. Comece provando o exemplo do repositório.",
           "blocks": [
-            {"type": "code", "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto\n./start.sh"},
+            {"type": "code", "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto/exemplo-jarvis\npython3 -m unittest discover -s . -p 'test_*.py' -v\npython3 smoke.py"},
             {"type": "steps", "items": [
-              {"title": "Crie o bot no Telegram", "text": "Abra o @BotFather, mande /newbot, escolha nome e @usuário e copie o token."},
-              {"title": "Cole o token", "text": "O assistente confere se o token vale e mostra o nome do seu bot."},
-              {"title": "Escolha o modelo", "text": "Nuvem pelo OpenRouter ou local pelo Ollama."},
-              {"title": "Defina nome e personalidade", "text": "Como ele fala: formal, direto ou bem-humorado."},
+              {"title": "Prove o exemplo", "text": "Rode os 9 testes e o smoke.py do exemplo-jarvis. Não precisa de chave nem de internet."},
+              {"title": "Exporte o briefing", "text": "Na página de comparação do INTELECTO, marque os ingredientes e baixe o seu briefing .md."},
+              {"title": "Crie o bot no Telegram", "text": "Abra o @BotFather, mande /newbot, escolha nome e @usuário e copie o token para o .env."},
+              {"title": "Peça a construção", "text": "Entregue o briefing ao Claude Code ou ao Codex e peça que construa a partir dele e do doc/intelecto.md, com testes."},
               {"title": "Mande \"oi\"", "text": "O seu bot responde com o nome e o jeito que você definiu."}
             ]},
             {"type": "note", "text": "O token e as chaves ficam só no arquivo de configuração, nunca num texto que vai para o Git. É a regra que você aprendeu na sequência 1."}

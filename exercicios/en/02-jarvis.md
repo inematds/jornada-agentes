@@ -23,15 +23,20 @@ In Telegram, open `@BotFather`, send `/newbot`, and choose a name and @username.
 
 **Done when:** You have the token and it does not appear in any file other than `.env`.
 
-## E3. Install (30 min)
+## E3. Build (30 min)
+
+INTELECTO has no installer: you hand a briefing to the agent and it builds the assistant, with tests. First, see the path working on the repository's example (9 tests, no key and no internet):
 
 ```bash
 git clone https://github.com/inematds/intelecto.git
-cd intelecto
-./start.sh
+cd intelecto/exemplo-jarvis
+python3 -m unittest discover -s . -p 'test_*.py' -v
+python3 smoke.py
 ```
 
-The setup assistant asks for the Telegram token, model, and personality. Use your `meu-jarvis.md` to answer.
+1. Open the INTELECTO comparison page (https://inematds.github.io/intelecto/), tick the ingredients, and export the briefing.
+2. Ask Claude Code or Codex: "Build my assistant from this briefing and from doc/intelecto.md, with tests."
+3. Use your `meu-jarvis.md` for the name, the way of speaking, and the personality. The Telegram token stays only in the `.env`.
 
 **Done when:** You send “hi” on Telegram and it replies with the name and style you defined.
 

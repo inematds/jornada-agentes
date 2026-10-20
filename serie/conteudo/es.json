@@ -39,7 +39,7 @@
       "h1": "Del chat al <span class=\"amb\">agente</span>, en cuatro pasos",
       "lead": "Deja de copiar y pegar y crea agentes que trabajen por ti: en tu computadora, en una cola de tareas e en tus redes sociales.",
       "description": "Resumen de la serie Del chat al agente: por qué el chat se queda corto, las 4 secuencias (OSWork, Jarvis, colas y redes automáticas), el orden correcto y por dónde empezar hoy. Abierto y gratuito.",
-      "resumo": "La mayoría de las personas se queda en el chat: pregunta, copia, pega y vuelve a preguntar. Esta serie muestra el camino completo para crear agentes que trabajan solos, em quatro sequências. Primero, la terminal y las carpetas (OSWork), luego, tu asistente no Telegram (INTELECTO), después, una cola de tareas que funciona mientras duermes (inemaccbot) y, por último, las redes sociales en automático. Cada secuencia incluye un curso, un proyecto abierto, un video y ejercicios con un criterio de conclusión.",
+      "resumo": "La mayoría de las personas se queda en el chat: pregunta, copia, pega y vuelve a preguntar. Esta serie muestra el camino completo hasta crear agentes que trabajan solos, en cuatro secuencias. Primero la terminal y las carpetas (OSWork), luego un asistente tuyo en Telegram (INTELECTO), después una cola de tareas que corre mientras duermes (inemaccbot) y, por último, las redes sociales en automático. Cada secuencia tiene curso, proyecto abierto, video y ejercicios con criterio de terminado.",
       "sections": [
         {
           "id": "como-funciona",
@@ -380,8 +380,8 @@
       "title": "Secuencia 2 — Crea tu Jarvis con INTELECTO",
       "h1": "Crea tu <span class=\"amb\">Jarvis</span>",
       "lead": "Un asistente personal que conversa contigo por Telegram, recuerda las conversaciones y tiene la personalidad que elijas.",
-      "description": "Secuencia 2 da série Del chat al agente: o INTELECTO, Asistente pessoal em Python que conversa pelo Telegram, com memória, Modelo en la nube (OpenRouter) ou local (Ollama). Instalação, Ejercicios e Curso, abertos e gratuitos.",
-      "resumo": "O INTELECTO é um Asistente pessoal escrito do zero em Python, Pequeño a propósito para você conseguir ler, entender e mudar. Ele recebe as suas mensagens no Telegram, pensa num laço de agente, busca na memória, usa ferramentas e responde com um Modelo en la nube (OpenRouter) ou en tu computadora (Ollama). A instalação é um comando e um Asistente de configuração em seis passos. Ele vem depois do OSWork porque usa Terminal, pastas e uma chave guardada no lugar certo.",
+      "description": "Secuencia 2 de la serie Del chat al agente: INTELECTO, asistente personal en Python que conversa por Telegram, con memoria, modelo en la nube (OpenRouter) o local (Ollama). Construcción, ejercicios y curso, abiertos y gratuitos.",
+      "resumo": "INTELECTO es un asistente personal escrito desde cero en Python, pequeño a propósito para que puedas leerlo, entenderlo y cambiarlo. Recibe tus mensajes en Telegram, piensa en un ciclo de agente, busca en la memoria, usa herramientas y responde con un modelo en la nube (OpenRouter) o en tu computadora (Ollama). No hay instalador: el agente construye el tuyo a partir de un briefing, con pruebas. Viene después de OSWork porque usa terminal, carpetas y una clave guardada en el lugar correcto.",
       "sections": [
         {
           "id": "como-funciona",
@@ -444,35 +444,35 @@
         {
           "id": "instalar",
           "chip": "Instalar",
-          "h2": "Un comando y seis pasos",
-          "sub": "start.sh prepara el entorno y abre el asistente de configuración.",
+          "h2": "Briefing, agente y pruebas",
+          "sub": "INTELECTO no tiene instalador: el agente construye tu asistente a partir de un briefing. Empieza probando el ejemplo del repositorio.",
           "blocks": [
             {
               "type": "code",
-              "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto\n./start.sh"
+              "text": "git clone https://github.com/inematds/intelecto.git\ncd intelecto/exemplo-jarvis\npython3 -m unittest discover -s . -p 'test_*.py' -v\npython3 smoke.py"
             },
             {
               "type": "steps",
               "items": [
                 {
+                  "title": "Prueba el ejemplo",
+                  "text": "Ejecuta las 9 pruebas y el smoke.py del exemplo-jarvis. No necesita clave ni internet."
+                },
+                {
+                  "title": "Exporta el briefing",
+                  "text": "En la página de comparación de INTELECTO, marca los ingredientes y descarga tu briefing .md."
+                },
+                {
                   "title": "Crea el bot en Telegram",
-                  "text": "Abre @BotFather, envía /newbot, elige un nombre y un @usuario, y copia el token."
+                  "text": "Abre @BotFather, envía /newbot, elige nombre y @usuario y copia el token en el .env."
                 },
                 {
-                  "title": "Pega el token",
-                  "text": "El asistente verifica si el token es válido y muestra el nombre de tu bot."
+                  "title": "Pide la construcción",
+                  "text": "Entrégale el briefing a Claude Code o a Codex y pídele que construya a partir de él y de doc/intelecto.md, con pruebas."
                 },
                 {
-                  "title": "Elige el modelo",
-                  "text": "En la nube con OpenRouter o local con Ollama."
-                },
-                {
-                  "title": "Define el nombre y la personalidad",
-                  "text": "Cómo habla: de manera formal, directa o con humor."
-                },
-                {
-                  "title": "Envía «hola»",
-                  "text": "Tu bot responde con el nombre y el estilo que definiste."
+                  "title": "Envía \"hola\"",
+                  "text": "Tu bot responde con el nombre y la forma que definiste."
                 }
               ]
             },
@@ -619,7 +619,7 @@
             },
             {
               "type": "code",
-              "text": "mkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila   <span class=\"c\"># respostas em Cola/feito/</span>"
+              "text": "mkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila   <span class=\"c\"># respuestas en fila/feito/</span>"
             }
           ]
         },

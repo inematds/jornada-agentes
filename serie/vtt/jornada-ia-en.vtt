@@ -1,0 +1,385 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.440
+In four steps you go from chatting
+
+2
+00:00:01.440 --> 00:00:03.220
+to building agents that work
+
+3
+00:00:03.220 --> 00:00:04.760
+for you: on your computer,
+
+4
+00:00:04.760 --> 00:00:06.260
+in a task queue, and on your
+
+5
+00:00:06.260 --> 00:00:07.200
+social media.
+
+6
+00:00:07.200 --> 00:00:08.760
+Most people stop at the chat,
+
+7
+00:00:08.760 --> 00:00:10.500
+copying and pasting answers.
+
+8
+00:00:10.500 --> 00:00:12.260
+In this video I show you the whole
+
+9
+00:00:12.260 --> 00:00:13.760
+path, the four steps,
+
+10
+00:00:13.760 --> 00:00:14.400
+and at the end,
+
+11
+00:00:14.400 --> 00:00:15.380
+where to start today,
+
+12
+00:00:15.380 --> 00:00:16.000
+for free.
+
+13
+00:00:16.000 --> 00:00:17.440
+Chat is great for asking questions.
+
+14
+00:00:17.440 --> 00:00:19.020
+But in chat you're the driver
+
+15
+00:00:19.020 --> 00:00:20.120
+the whole time:
+
+16
+00:00:20.120 --> 00:00:21.840
+ask, copy, paste,
+
+17
+00:00:21.840 --> 00:00:23.480
+tweak, ask again.
+
+18
+00:00:23.480 --> 00:00:24.760
+When you close the window,
+
+19
+00:00:24.760 --> 00:00:25.720
+the work stops.
+
+20
+00:00:25.720 --> 00:00:27.020
+An agent is different:
+
+21
+00:00:27.020 --> 00:00:28.660
+it reads your files,
+
+22
+00:00:28.660 --> 00:00:31.340
+runs tasks, and keeps working while you
+
+23
+00:00:31.340 --> 00:00:32.340
+do something else.
+
+24
+00:00:32.340 --> 00:00:33.820
+The shift isn't learning a new
+
+25
+00:00:33.820 --> 00:00:34.300
+model.
+
+26
+00:00:34.300 --> 00:00:35.420
+It's changing where you work:
+
+27
+00:00:35.420 --> 00:00:37.120
+from the chat to the system.
+
+28
+00:00:37.120 --> 00:00:38.720
+Step one: OSWork.
+
+29
+00:00:38.720 --> 00:00:40.200
+From chat to the terminal.
+
+30
+00:00:40.200 --> 00:00:41.480
+You learn folders,
+
+31
+00:00:41.480 --> 00:00:43.940
+markdown files, the terminal, and the agent
+
+32
+00:00:43.940 --> 00:00:45.260
+working inside a folder,
+
+33
+00:00:45.260 --> 00:00:47.440
+with Claude Code or Codex.
+
+34
+00:00:47.440 --> 00:00:49.680
+It sounds technical, but it's only a few commands.
+
+35
+00:00:49.680 --> 00:00:51.100
+This is where most people get stuck,
+
+36
+00:00:51.100 --> 00:00:52.540
+and this is where everything changes:
+
+37
+00:00:52.540 --> 00:00:54.700
+you stop typing answers and start
+
+38
+00:00:54.700 --> 00:00:55.800
+giving tasks.
+
+39
+00:00:55.800 --> 00:00:57.560
+Step two: your Jarvis.
+
+40
+00:00:57.560 --> 00:00:59.500
+With INTELECTO you build a personal
+
+41
+00:00:59.500 --> 00:01:01.240
+assistant that talks to you on Telegram,
+
+42
+00:01:01.240 --> 00:01:03.440
+remembers your conversations, and has the personality
+
+43
+00:01:03.440 --> 00:01:04.380
+you define.
+
+44
+00:01:04.380 --> 00:01:05.740
+It runs on your computer,
+
+45
+00:01:05.740 --> 00:01:07.380
+with a cloud or local model.
+
+46
+00:01:07.380 --> 00:01:08.880
+You no longer open a website to
+
+47
+00:01:08.880 --> 00:01:10.600
+chat: the assistant is yours.
+
+48
+00:01:10.600 --> 00:01:11.570
+Step
+
+49
+00:01:11.570 --> 00:01:12.340
+three: queues.
+
+50
+00:01:12.340 --> 00:01:14.000
+An agent does one thing at a time.
+
+51
+00:01:14.000 --> 00:01:16.100
+A queue lets you send ten requests
+
+52
+00:01:16.100 --> 00:01:17.020
+and go to sleep.
+
+53
+00:01:17.020 --> 00:01:19.280
+inemaccbot is a Telegram bot
+
+54
+00:01:19.280 --> 00:01:20.380
+with a durable queue:
+
+55
+00:01:20.380 --> 00:01:21.580
+it saves every task,
+
+56
+00:01:21.580 --> 00:01:22.380
+resumes if it crashes,
+
+57
+00:01:22.380 --> 00:01:24.200
+and stops at a gate when it needs
+
+58
+00:01:24.200 --> 00:01:25.280
+your approval.
+
+59
+00:01:25.280 --> 00:01:27.800
+Transcribing, dubbing, explainer videos,
+
+60
+00:01:27.800 --> 00:01:30.460
+courses, reels: everything becomes a task in the queue.
+
+61
+00:01:30.460 --> 00:01:31.400
+Step
+
+62
+00:01:31.400 --> 00:01:32.980
+four: automating social media.
+
+63
+00:01:32.980 --> 00:01:34.640
+The seven-step reel,
+
+64
+00:01:34.640 --> 00:01:37.260
+r7e, builds a reel with a hook,
+
+65
+00:01:37.260 --> 00:01:39.400
+desire, fear, ease,
+
+66
+00:01:39.400 --> 00:01:42.000
+discovery, benefit, and comment.
+
+67
+00:01:42.000 --> 00:01:44.680
+promoavatar makes promo videos with an
+
+68
+00:01:44.680 --> 00:01:46.040
+avatar for each audience.
+
+69
+00:01:46.040 --> 00:01:48.120
+And xviral:
+
+70
+00:01:48.120 --> 00:01:50.020
+finviral, saudeviral, advviral.
+
+71
+00:01:50.020 --> 00:01:51.840
+Systems that watch what the biggest players
+
+72
+00:01:51.840 --> 00:01:52.820
+in the niche have posted,
+
+73
+00:01:52.820 --> 00:01:54.480
+separate out the numbers and sources,
+
+74
+00:01:54.480 --> 00:01:56.220
+and publish on their own every day.
+
+75
+00:01:56.220 --> 00:01:57.760
+You create the viral channel for your
+
+76
+00:01:57.760 --> 00:01:58.140
+niche.
+
+77
+00:01:58.140 --> 00:01:59.200
+The order matters.
+
+78
+00:01:59.200 --> 00:02:00.140
+Without step one,
+
+79
+00:02:00.140 --> 00:02:01.460
+the others can't stand.
+
+80
+00:02:01.460 --> 00:02:03.580
+There's no miracle of earning while you
+
+81
+00:02:03.580 --> 00:02:05.360
+sleep if the system doesn't run properly.
+
+82
+00:02:05.360 --> 00:02:06.620
+First folders and terminal,
+
+83
+00:02:06.620 --> 00:02:07.740
+then the assistant,
+
+84
+00:02:07.740 --> 00:02:08.580
+then the queue,
+
+85
+00:02:08.580 --> 00:02:10.420
+and only then social media on autopilot.
+
+86
+00:02:10.420 --> 00:02:12.260
+Each step has its own video here
+
+87
+00:02:12.260 --> 00:02:12.780
+on the channel.
+
+88
+00:02:12.780 --> 00:02:13.960
+Where to start today:
+
+89
+00:02:13.960 --> 00:02:15.040
+with step one,
+
+90
+00:02:15.040 --> 00:02:16.360
+OSWork.
+
+91
+00:02:16.360 --> 00:02:18.540
+The courses, guides, and projects
+
+92
+00:02:18.540 --> 00:02:20.607
+for each step are on INEMA dot
+
+93
+00:02:20.607 --> 00:02:23.300
+CLUB, open and free.
+
+94
+00:02:23.300 --> 00:02:24.660
+Watch the next video,
+
+95
+00:02:24.660 --> 00:02:25.300
+leave the chat behind,
+
+96
+00:02:25.300 --> 00:02:27.220
+and start building your own agents.

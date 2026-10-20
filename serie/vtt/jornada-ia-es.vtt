@@ -1,0 +1,385 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.440
+En cuatro secuencias pasas del chat
+
+2
+00:00:01.440 --> 00:00:03.220
+a crear agentes que trabajan
+
+3
+00:00:03.220 --> 00:00:04.760
+por ti: en tu computadora,
+
+4
+00:00:04.760 --> 00:00:06.260
+en una cola de tareas y en tus
+
+5
+00:00:06.260 --> 00:00:07.200
+redes sociales.
+
+6
+00:00:07.200 --> 00:00:08.760
+La mayoría de las personas se queda en el chat,
+
+7
+00:00:08.760 --> 00:00:10.500
+copiando y pegando respuestas.
+
+8
+00:00:10.500 --> 00:00:12.260
+En este video te muestro el camino
+
+9
+00:00:12.260 --> 00:00:13.760
+completo, las cuatro secuencias,
+
+10
+00:00:13.760 --> 00:00:14.400
+y al final,
+
+11
+00:00:14.400 --> 00:00:15.380
+dónde empezar hoy,
+
+12
+00:00:15.380 --> 00:00:16.000
+gratis.
+
+13
+00:00:16.000 --> 00:00:17.440
+El chat es excelente para preguntar.
+
+14
+00:00:17.440 --> 00:00:19.020
+Pero en el chat tú eres el conductor
+
+15
+00:00:19.020 --> 00:00:20.120
+todo el tiempo:
+
+16
+00:00:20.120 --> 00:00:21.840
+preguntas, copias, pegas,
+
+17
+00:00:21.840 --> 00:00:23.480
+ajustas, vuelves a preguntar.
+
+18
+00:00:23.480 --> 00:00:24.760
+Cuando cierras la ventana,
+
+19
+00:00:24.760 --> 00:00:25.720
+el trabajo se detiene.
+
+20
+00:00:25.720 --> 00:00:27.020
+Un agente es diferente:
+
+21
+00:00:27.020 --> 00:00:28.660
+lee tus archivos,
+
+22
+00:00:28.660 --> 00:00:31.340
+ejecuta tareas y sigue trabajando mientras tú
+
+23
+00:00:31.340 --> 00:00:32.340
+haces otra cosa.
+
+24
+00:00:32.340 --> 00:00:33.820
+El cambio no es aprender un modelo
+
+25
+00:00:33.820 --> 00:00:34.300
+nuevo.
+
+26
+00:00:34.300 --> 00:00:35.420
+Es cambiar de lugar:
+
+27
+00:00:35.420 --> 00:00:37.120
+del chat al sistema.
+
+28
+00:00:37.120 --> 00:00:38.720
+Secuencia uno: OSWork.
+
+29
+00:00:38.720 --> 00:00:40.200
+Del chat a la terminal.
+
+30
+00:00:40.200 --> 00:00:41.480
+Aprendes carpetas,
+
+31
+00:00:41.480 --> 00:00:43.940
+archivos markdown, la terminal y el agente
+
+32
+00:00:43.940 --> 00:00:45.260
+trabajando dentro de una carpeta,
+
+33
+00:00:45.260 --> 00:00:47.440
+con Claude Code o Codex.
+
+34
+00:00:47.440 --> 00:00:49.680
+Parece técnico, pero son pocos comandos.
+
+35
+00:00:49.680 --> 00:00:51.100
+Aquí es donde la mayoría se atora,
+
+36
+00:00:51.100 --> 00:00:52.540
+y aquí es donde todo cambia:
+
+37
+00:00:52.540 --> 00:00:54.700
+dejas de escribir respuestas y empiezas
+
+38
+00:00:54.700 --> 00:00:55.800
+a dar tareas.
+
+39
+00:00:55.800 --> 00:00:57.560
+Secuencia dos: tu Jarvis.
+
+40
+00:00:57.560 --> 00:00:59.500
+Con INTELECTO armas un asistente
+
+41
+00:00:59.500 --> 00:01:01.240
+personal que habla contigo por Telegram,
+
+42
+00:01:01.240 --> 00:01:03.440
+recuerda las conversaciones y tiene la personalidad
+
+43
+00:01:03.440 --> 00:01:04.380
+que tú definas.
+
+44
+00:01:04.380 --> 00:01:05.740
+Corre en tu computadora,
+
+45
+00:01:05.740 --> 00:01:07.380
+con modelo en la nube o local.
+
+46
+00:01:07.380 --> 00:01:08.880
+Ya no abres un sitio web para
+
+47
+00:01:08.880 --> 00:01:10.600
+conversar: el asistente es tuyo.
+
+48
+00:01:10.600 --> 00:01:11.570
+Secuencia
+
+49
+00:01:11.570 --> 00:01:12.340
+tres: colas.
+
+50
+00:01:12.340 --> 00:01:14.000
+Un agente hace una cosa a la vez.
+
+51
+00:01:14.000 --> 00:01:16.100
+Una cola te deja mandar diez pedidos
+
+52
+00:01:16.100 --> 00:01:17.020
+e irte a dormir.
+
+53
+00:01:17.020 --> 00:01:19.280
+inemaccbot es un bot de Telegram
+
+54
+00:01:19.280 --> 00:01:20.380
+con cola durable:
+
+55
+00:01:20.380 --> 00:01:21.580
+guarda cada tarea,
+
+56
+00:01:21.580 --> 00:01:22.380
+se retoma si se cae,
+
+57
+00:01:22.380 --> 00:01:24.200
+y se detiene en una compuerta cuando necesita
+
+58
+00:01:24.200 --> 00:01:25.280
+tu aprobación.
+
+59
+00:01:25.280 --> 00:01:27.800
+Transcribir, doblar, video explicativo,
+
+60
+00:01:27.800 --> 00:01:30.460
+curso, reel: todo se vuelve tarea en la cola.
+
+61
+00:01:30.460 --> 00:01:31.400
+Secuencia
+
+62
+00:01:31.400 --> 00:01:32.980
+cuatro: automatizar las redes sociales.
+
+63
+00:01:32.980 --> 00:01:34.640
+El reel de siete etapas,
+
+64
+00:01:34.640 --> 00:01:37.260
+r7e, arma un reel con gancho,
+
+65
+00:01:37.260 --> 00:01:39.400
+deseo, miedo, facilidad,
+
+66
+00:01:39.400 --> 00:01:42.000
+descubrimiento, beneficio y comentario.
+
+67
+00:01:42.000 --> 00:01:44.680
+promoavatar hace videos de promoción con
+
+68
+00:01:44.680 --> 00:01:46.040
+avatar para cada público.
+
+69
+00:01:46.040 --> 00:01:48.120
+Y xviral:
+
+70
+00:01:48.120 --> 00:01:50.020
+finviral, saudeviral, advviral.
+
+71
+00:01:50.020 --> 00:01:51.840
+Sistemas que ven lo que publicaron los más grandes
+
+72
+00:01:51.840 --> 00:01:52.820
+del nicho,
+
+73
+00:01:52.820 --> 00:01:54.480
+separan los números y las fuentes,
+
+74
+00:01:54.480 --> 00:01:56.220
+y publican solos todos los días.
+
+75
+00:01:56.220 --> 00:01:57.760
+Tú creas el canal viral de tu
+
+76
+00:01:57.760 --> 00:01:58.140
+nicho.
+
+77
+00:01:58.140 --> 00:01:59.200
+El orden importa.
+
+78
+00:01:59.200 --> 00:02:00.140
+Sin la secuencia uno,
+
+79
+00:02:00.140 --> 00:02:01.460
+las demás no se sostienen.
+
+80
+00:02:01.460 --> 00:02:03.580
+No existe el milagro de generar ingresos mientras
+
+81
+00:02:03.580 --> 00:02:05.360
+duermes si el sistema no funciona bien.
+
+82
+00:02:05.360 --> 00:02:06.620
+Primero carpeta y terminal,
+
+83
+00:02:06.620 --> 00:02:07.740
+después el asistente,
+
+84
+00:02:07.740 --> 00:02:08.580
+después la cola,
+
+85
+00:02:08.580 --> 00:02:10.420
+y solo entonces las redes en automático.
+
+86
+00:02:10.420 --> 00:02:12.260
+Cada secuencia tiene un video propio aquí
+
+87
+00:02:12.260 --> 00:02:12.780
+en el canal.
+
+88
+00:02:12.780 --> 00:02:13.960
+Por dónde empezar hoy:
+
+89
+00:02:13.960 --> 00:02:15.040
+por la secuencia uno,
+
+90
+00:02:15.040 --> 00:02:16.360
+OSWork.
+
+91
+00:02:16.360 --> 00:02:18.540
+Los cursos, las guías y los proyectos
+
+92
+00:02:18.540 --> 00:02:20.607
+de cada secuencia están en INEMA punto
+
+93
+00:02:20.607 --> 00:02:23.300
+CLUB, abiertos y gratuitos.
+
+94
+00:02:23.300 --> 00:02:24.660
+Mira el siguiente video,
+
+95
+00:02:24.660 --> 00:02:25.300
+sal del chat,
+
+96
+00:02:25.300 --> 00:02:27.220
+y empieza a crear tus agentes.

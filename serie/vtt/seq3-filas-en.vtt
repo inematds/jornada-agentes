@@ -1,0 +1,241 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.000
+Send ten tasks to your agents,
+
+2
+00:00:02.000 --> 00:00:03.740
+go to sleep, and wake up to the work
+
+3
+00:00:03.740 --> 00:00:05.760
+done, every step checked.
+
+4
+00:00:05.760 --> 00:00:07.260
+This is sequence three:
+
+5
+00:00:07.260 --> 00:00:07.960
+queues.
+
+6
+00:00:07.960 --> 00:00:10.200
+In this video: why a single agent
+
+7
+00:00:10.200 --> 00:00:12.120
+isn't enough, how the
+
+8
+00:00:12.120 --> 00:00:13.680
+inemaccbot queue works, and at the end,
+
+9
+00:00:13.680 --> 00:00:15.220
+the gate that stops the agent from
+
+10
+00:00:15.220 --> 00:00:16.140
+moving on without you.
+
+11
+00:00:16.140 --> 00:00:17.840
+An agent in the terminal does one thing
+
+12
+00:00:17.840 --> 00:00:19.420
+at a time, and only while you're
+
+13
+00:00:19.420 --> 00:00:19.880
+watching.
+
+14
+00:00:19.880 --> 00:00:21.760
+If the internet drops or the machine
+
+15
+00:00:21.760 --> 00:00:23.840
+restarts, the work is lost.
+
+16
+00:00:23.840 --> 00:00:25.500
+And if you ask for ten things at the
+
+17
+00:00:25.500 --> 00:00:27.080
+same time, they trip over each other.
+
+18
+00:00:27.080 --> 00:00:28.700
+To work on its own,
+
+19
+00:00:28.700 --> 00:00:30.160
+the agent needs a queue.
+
+20
+00:00:30.160 --> 00:00:32.440
+inemaccbot is a Telegram bot
+
+21
+00:00:32.440 --> 00:00:33.400
+with a durable queue.
+
+22
+00:00:33.400 --> 00:00:35.800
+Each request becomes a task stored in a
+
+23
+00:00:35.800 --> 00:00:36.800
+SQLite database.
+
+24
+00:00:36.800 --> 00:00:38.420
+The task is picked up with a heartbeat
+
+25
+00:00:38.420 --> 00:00:39.520
+while it runs.
+
+26
+00:00:39.520 --> 00:00:41.500
+If it crashes, it goes back to the queue
+
+27
+00:00:41.500 --> 00:00:42.280
+and is resumed.
+
+28
+00:00:42.280 --> 00:00:43.400
+Nothing is lost.
+
+29
+00:00:43.400 --> 00:00:44.400
+And what goes into the queue?
+
+30
+00:00:44.400 --> 00:00:46.200
+Skills that run as an agent:
+
+31
+00:00:46.200 --> 00:00:48.260
+transcribe, dub, explainer video,
+
+32
+00:00:48.260 --> 00:00:50.300
+course, demo, reel.
+
+33
+00:00:50.300 --> 00:00:51.880
+You send the request through Telegram.
+
+34
+00:00:51.880 --> 00:00:53.440
+The default engine is Claude Code,
+
+35
+00:00:53.440 --> 00:00:55.460
+with Codex or OpenCode as an
+
+36
+00:00:55.460 --> 00:00:56.060
+alternative.
+
+37
+00:00:56.060 --> 00:00:58.200
+The next step is workflows:
+
+38
+00:00:58.200 --> 00:00:59.500
+several phases in sequence,
+
+39
+00:00:59.500 --> 00:01:01.120
+with the state saved at each one.
+
+40
+00:01:01.120 --> 00:01:02.700
+In the middle, a human gate.
+
+41
+00:01:02.700 --> 00:01:04.700
+The bot writes the texts and stops.
+
+42
+00:01:04.700 --> 00:01:06.820
+You read them, and only when you approve does it
+
+43
+00:01:06.820 --> 00:01:07.920
+move on to the avatar,
+
+44
+00:01:07.920 --> 00:01:09.700
+the download, and the video.
+
+45
+00:01:09.700 --> 00:01:11.400
+Automatic, but with you in command.
+
+46
+00:01:11.400 --> 00:01:12.740
+This is where you stop being
+
+47
+00:01:12.740 --> 00:01:14.280
+the one who does, and become the one who manages.
+
+48
+00:01:14.280 --> 00:01:15.440
+You define the tasks,
+
+49
+00:01:15.440 --> 00:01:16.820
+the gates, and the rules.
+
+50
+00:01:16.820 --> 00:01:18.300
+The agents run them in the queue,
+
+51
+00:01:18.300 --> 00:01:20.080
+and you decide at the points that matter.
+
+52
+00:01:20.080 --> 00:01:21.000
+With the queue up and running,
+
+53
+00:01:21.000 --> 00:01:22.640
+you can put social media on
+
+54
+00:01:22.640 --> 00:01:24.040
+autopilot: sequence four.
+
+55
+00:01:24.040 --> 00:01:25.060
+The
+
+56
+00:01:25.060 --> 00:01:27.120
+inemaccbot, the guide, and the complete architecture
+
+57
+00:01:27.120 --> 00:01:28.920
+are on INEMA dot CLUB,
+
+58
+00:01:28.920 --> 00:01:30.420
+open and free.
+
+59
+00:01:30.420 --> 00:01:31.820
+Build your queue and send the
+
+60
+00:01:31.820 --> 00:01:32.660
+first task.

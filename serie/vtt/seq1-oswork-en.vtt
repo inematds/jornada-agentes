@@ -1,0 +1,317 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.460
+With half a dozen commands you step out
+
+2
+00:00:01.460 --> 00:00:02.960
+of the chat and put an agent to
+
+3
+00:00:02.960 --> 00:00:04.640
+work inside your folders.
+
+4
+00:00:04.640 --> 00:00:05.800
+This is sequence one,
+
+5
+00:00:05.800 --> 00:00:08.280
+OSWork, and it separates people who use
+
+6
+00:00:08.280 --> 00:00:10.320
+artificial intelligence from people who create with it.
+
+7
+00:00:10.320 --> 00:00:12.300
+In this video: why the chat gets stuck,
+
+8
+00:00:12.300 --> 00:00:13.600
+the terminal steps,
+
+9
+00:00:13.600 --> 00:00:14.300
+and at the end,
+
+10
+00:00:14.300 --> 00:00:16.040
+the first request for your agent.
+
+11
+00:00:16.040 --> 00:00:18.640
+In the chat, artificial intelligence can't see
+
+12
+00:00:18.640 --> 00:00:19.700
+your files,
+
+13
+00:00:19.700 --> 00:00:21.260
+forgets what you explained yesterday,
+
+14
+00:00:21.260 --> 00:00:23.780
+and every answer has to be copied and
+
+15
+00:00:23.780 --> 00:00:24.320
+pasted.
+
+16
+00:00:24.320 --> 00:00:26.320
+You become the mail carrier between the window
+
+17
+00:00:26.320 --> 00:00:26.940
+and your work.
+
+18
+00:00:26.940 --> 00:00:29.600
+OSWork shows the path in three
+
+19
+00:00:29.600 --> 00:00:30.840
+windows: the Chat,
+
+20
+00:00:30.840 --> 00:00:32.420
+the Work and the Desktop.
+
+21
+00:00:32.420 --> 00:00:33.340
+And then the terminal,
+
+22
+00:00:33.340 --> 00:00:34.480
+where the agent lives.
+
+23
+00:00:34.480 --> 00:00:35.640
+The terminal looks scary,
+
+24
+00:00:35.640 --> 00:00:36.840
+but it's just another window.
+
+25
+00:00:36.840 --> 00:00:38.980
+You type a command and it answers.
+
+26
+00:00:38.980 --> 00:00:40.720
+With six commands you navigate:
+
+27
+00:00:40.720 --> 00:00:41.620
+see where you are,
+
+28
+00:00:41.620 --> 00:00:43.360
+list, enter a folder,
+
+29
+00:00:43.360 --> 00:00:44.940
+go back, create a folder,
+
+30
+00:00:44.940 --> 00:00:45.900
+open a file.
+
+31
+00:00:45.900 --> 00:00:46.780
+It's not programming.
+
+32
+00:00:46.780 --> 00:00:48.520
+It's walking through your folders without the
+
+33
+00:00:48.520 --> 00:00:48.860
+mouse.
+
+34
+00:00:48.860 --> 00:00:50.560
+The secret is in the folders.
+
+35
+00:00:50.560 --> 00:00:51.660
+One folder per project,
+
+36
+00:00:51.660 --> 00:00:53.680
+and inside it, text files in
+
+37
+00:00:53.680 --> 00:00:54.180
+markdown.
+
+38
+00:00:54.180 --> 00:00:56.080
+One of them is AGENTS dot MD:
+
+39
+00:00:56.080 --> 00:00:57.420
+the project's rules,
+
+40
+00:00:57.420 --> 00:00:58.100
+who you are,
+
+41
+00:00:58.100 --> 00:00:59.140
+what it can and what it
+
+42
+00:00:59.140 --> 00:00:59.560
+can't do.
+
+43
+00:00:59.560 --> 00:01:01.340
+The agent reads this file every time
+
+44
+00:01:01.340 --> 00:01:01.900
+it starts.
+
+45
+00:01:01.900 --> 00:01:03.280
+It's like handing the manual to a
+
+46
+00:01:03.280 --> 00:01:04.080
+new employee.
+
+47
+00:01:04.080 --> 00:01:05.060
+Now the agent.
+
+48
+00:01:05.060 --> 00:01:06.800
+You go into the project folder and
+
+49
+00:01:06.800 --> 00:01:08.880
+call Claude Code or Codex.
+
+50
+00:01:08.880 --> 00:01:11.040
+Ask: create a simple page about me
+
+51
+00:01:11.040 --> 00:01:12.700
+and a file with the rules for this
+
+52
+00:01:12.700 --> 00:01:13.360
+project.
+
+53
+00:01:13.360 --> 00:01:14.920
+The files appear in the folder.
+
+54
+00:01:14.920 --> 00:01:16.160
+You didn't program anything.
+
+55
+00:01:16.160 --> 00:01:16.960
+You gave the task,
+
+56
+00:01:16.960 --> 00:01:18.740
+checked the result and decided.
+
+57
+00:01:18.740 --> 00:01:19.960
+That's management.
+
+58
+00:01:19.960 --> 00:01:21.280
+Then comes security.
+
+59
+00:01:21.280 --> 00:01:23.020
+Git saves every version,
+
+60
+00:01:23.020 --> 00:01:24.240
+and if the agent makes a mistake,
+
+61
+00:01:24.240 --> 00:01:24.860
+you go back.
+
+62
+00:01:24.860 --> 00:01:27.160
+Keys and passwords stay out of the
+
+63
+00:01:27.160 --> 00:01:28.960
+text, in a secrets file.
+
+64
+00:01:28.960 --> 00:01:30.380
+And at the end of the path,
+
+65
+00:01:30.380 --> 00:01:32.220
+Telegram becomes the interface,
+
+66
+00:01:32.220 --> 00:01:34.860
+and a VPS keeps the agent running
+
+67
+00:01:34.860 --> 00:01:36.540
+even with your computer turned off.
+
+68
+00:01:36.540 --> 00:01:38.080
+This is the step that unlocks the
+
+69
+00:01:38.080 --> 00:01:39.180
+other three sequences:
+
+70
+00:01:39.180 --> 00:01:41.300
+Jarvis, the queues and the networks
+
+71
+00:01:41.300 --> 00:01:42.260
+on autopilot.
+
+72
+00:01:42.260 --> 00:01:43.460
+The complete OSWork,
+
+73
+00:01:43.460 --> 00:01:44.420
+command by command,
+
+74
+00:01:44.420 --> 00:01:45.960
+is on INEMA dot CLUB,
+
+75
+00:01:45.960 --> 00:01:47.260
+open and free.
+
+76
+00:01:47.260 --> 00:01:48.520
+Open the terminal today,
+
+77
+00:01:48.520 --> 00:01:49.620
+create your first folder,
+
+78
+00:01:49.620 --> 00:01:51.000
+and give your agent its first task
+
+79
+00:01:51.000 --> 00:01:51.740
+.

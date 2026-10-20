@@ -1,0 +1,241 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.000
+Envía diez tareas a tus agentes,
+
+2
+00:00:02.000 --> 00:00:03.740
+vete a dormir y despierta con el trabajo
+
+3
+00:00:03.740 --> 00:00:05.760
+listo, cada etapa verificada.
+
+4
+00:00:05.760 --> 00:00:07.260
+Esta es la secuencia tres:
+
+5
+00:00:07.260 --> 00:00:07.960
+colas.
+
+6
+00:00:07.960 --> 00:00:10.200
+En este video: por qué un agente solo
+
+7
+00:00:10.200 --> 00:00:12.120
+no basta, cómo funciona la cola del
+
+8
+00:00:12.120 --> 00:00:13.680
+inemaccbot, y al final,
+
+9
+00:00:13.680 --> 00:00:15.220
+el portón que impide que el agente
+
+10
+00:00:15.220 --> 00:00:16.140
+siga sin ti.
+
+11
+00:00:16.140 --> 00:00:17.840
+Un agente en la terminal hace una cosa
+
+12
+00:00:17.840 --> 00:00:19.420
+a la vez, y solo mientras tú estás
+
+13
+00:00:19.420 --> 00:00:19.880
+mirando.
+
+14
+00:00:19.880 --> 00:00:21.760
+Si se cae el internet o la máquina
+
+15
+00:00:21.760 --> 00:00:23.840
+se reinicia, el trabajo se pierde.
+
+16
+00:00:23.840 --> 00:00:25.500
+Y si le pides diez cosas al
+
+17
+00:00:25.500 --> 00:00:27.080
+mismo tiempo, se atropellan.
+
+18
+00:00:27.080 --> 00:00:28.700
+Para trabajar solo,
+
+19
+00:00:28.700 --> 00:00:30.160
+el agente necesita una cola.
+
+20
+00:00:30.160 --> 00:00:32.440
+El inemaccbot es un bot de Telegram
+
+21
+00:00:32.440 --> 00:00:33.400
+con cola durable.
+
+22
+00:00:33.400 --> 00:00:35.800
+Cada pedido se vuelve una tarea guardada en una
+
+23
+00:00:35.800 --> 00:00:36.800
+base de datos SQLite.
+
+24
+00:00:36.800 --> 00:00:38.420
+La tarea se toma con una señal
+
+25
+00:00:38.420 --> 00:00:39.520
+de vida mientras se ejecuta.
+
+26
+00:00:39.520 --> 00:00:41.500
+Si se cae, vuelve a la cola
+
+27
+00:00:41.500 --> 00:00:42.280
+y se retoma.
+
+28
+00:00:42.280 --> 00:00:43.400
+No se pierde nada.
+
+29
+00:00:43.400 --> 00:00:44.400
+¿Y qué entra en la cola?
+
+30
+00:00:44.400 --> 00:00:46.200
+Skills que corren como agente:
+
+31
+00:00:46.200 --> 00:00:48.260
+transcribir, doblar, video explicativo,
+
+32
+00:00:48.260 --> 00:00:50.300
+curso, demostración, reel.
+
+33
+00:00:50.300 --> 00:00:51.880
+Tú envías el pedido por Telegram.
+
+34
+00:00:51.880 --> 00:00:53.440
+El motor predeterminado es Claude Code,
+
+35
+00:00:53.440 --> 00:00:55.460
+con Codex u OpenCode como
+
+36
+00:00:55.460 --> 00:00:56.060
+alternativa.
+
+37
+00:00:56.060 --> 00:00:58.200
+El siguiente paso son los flujos:
+
+38
+00:00:58.200 --> 00:00:59.500
+varias fases en secuencia,
+
+39
+00:00:59.500 --> 00:01:01.120
+con el estado guardado en cada una.
+
+40
+00:01:01.120 --> 00:01:02.700
+En el medio, un portón humano.
+
+41
+00:01:02.700 --> 00:01:04.700
+El bot escribe los textos y se detiene.
+
+42
+00:01:04.700 --> 00:01:06.820
+Tú los lees, y solo cuando apruebas
+
+43
+00:01:06.820 --> 00:01:07.920
+sigue con el avatar,
+
+44
+00:01:07.920 --> 00:01:09.700
+la descarga y el video.
+
+45
+00:01:09.700 --> 00:01:11.400
+Automático, pero contigo al mando.
+
+46
+00:01:11.400 --> 00:01:12.740
+Aquí es donde dejas de ser
+
+47
+00:01:12.740 --> 00:01:14.280
+quien hace para ser quien gestiona.
+
+48
+00:01:14.280 --> 00:01:15.440
+Tú defines las tareas,
+
+49
+00:01:15.440 --> 00:01:16.820
+los portones y las reglas.
+
+50
+00:01:16.820 --> 00:01:18.300
+Los agentes ejecutan en la cola,
+
+51
+00:01:18.300 --> 00:01:20.080
+y tú decides en los puntos que importan.
+
+52
+00:01:20.080 --> 00:01:21.000
+Con la cola en pie,
+
+53
+00:01:21.000 --> 00:01:22.640
+se pueden poner las redes sociales en
+
+54
+00:01:22.640 --> 00:01:24.040
+automático: la secuencia cuatro.
+
+55
+00:01:24.040 --> 00:01:25.060
+El
+
+56
+00:01:25.060 --> 00:01:27.120
+inemaccbot, la guía y la arquitectura completa
+
+57
+00:01:27.120 --> 00:01:28.920
+están en INEMA punto CLUB,
+
+58
+00:01:28.920 --> 00:01:30.420
+abiertos y gratuitos.
+
+59
+00:01:30.420 --> 00:01:31.820
+Arma tu cola y envía la
+
+60
+00:01:31.820 --> 00:01:32.660
+primera tarea.

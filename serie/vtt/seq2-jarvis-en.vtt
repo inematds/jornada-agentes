@@ -1,0 +1,257 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.520
+You can have your own Jarvis:
+
+2
+00:00:01.520 --> 00:00:03.040
+an assistant that talks to you through
+
+3
+00:00:03.040 --> 00:00:04.900
+Telegram, remembers your conversations, and has the
+
+4
+00:00:04.900 --> 00:00:06.300
+personality you choose.
+
+5
+00:00:06.300 --> 00:00:07.680
+This is sequence two,
+
+6
+00:00:07.680 --> 00:00:08.420
+INTELECTO.
+
+7
+00:00:08.420 --> 00:00:09.980
+In this video: what it is,
+
+8
+00:00:09.980 --> 00:00:11.000
+how it thinks,
+
+9
+00:00:11.000 --> 00:00:12.500
+how to install it, and at the end,
+
+10
+00:00:12.500 --> 00:00:13.780
+what it becomes when you connect
+
+11
+00:00:13.780 --> 00:00:14.800
+the next sequences.
+
+12
+00:00:14.800 --> 00:00:16.540
+INTELECTO is a personal assistant written
+
+13
+00:00:16.540 --> 00:00:17.600
+from scratch in Python.
+
+14
+00:00:17.600 --> 00:00:18.900
+No heavy framework,
+
+15
+00:00:18.900 --> 00:00:20.540
+no Docker, no web panel.
+
+16
+00:00:20.540 --> 00:00:22.240
+It's about three thousand lines and
+
+17
+00:00:22.240 --> 00:00:23.060
+seven dependencies.
+
+18
+00:00:23.060 --> 00:00:24.160
+Small on purpose:
+
+19
+00:00:24.160 --> 00:00:25.160
+you can read it,
+
+20
+00:00:25.160 --> 00:00:26.420
+understand it, and change it.
+
+21
+00:00:26.420 --> 00:00:27.660
+The path is simple.
+
+22
+00:00:27.660 --> 00:00:29.240
+You send a message on Telegram.
+
+23
+00:00:29.240 --> 00:00:30.640
+INTELECTO receives it,
+
+24
+00:00:30.640 --> 00:00:31.820
+the agent loop thinks,
+
+25
+00:00:31.820 --> 00:00:33.020
+searches the memory,
+
+26
+00:00:33.020 --> 00:00:35.100
+uses tools, and the model generates the
+
+27
+00:00:35.100 --> 00:00:36.580
+answer: in the cloud,
+
+28
+00:00:36.580 --> 00:00:38.320
+through OpenRouter, or locally,
+
+29
+00:00:38.320 --> 00:00:39.200
+through Ollama.
+
+30
+00:00:39.200 --> 00:00:41.120
+The answer comes back on Telegram.
+
+31
+00:00:41.120 --> 00:00:43.140
+It's the same design as the big assistants,
+
+32
+00:00:43.140 --> 00:00:43.940
+only it's yours.
+
+33
+00:00:43.940 --> 00:00:45.860
+Installation starts with one command:
+
+34
+00:00:45.860 --> 00:00:47.520
+start dot sh.
+
+35
+00:00:47.840 --> 00:00:49.760
+It sets up the environment and opens a
+
+36
+00:00:49.760 --> 00:00:52.040
+six-step setup assistant.
+
+37
+00:00:52.040 --> 00:00:53.660
+You create the bot on Telegram with
+
+38
+00:00:53.660 --> 00:00:55.300
+BotFather and paste the token.
+
+39
+00:00:55.300 --> 00:00:56.300
+You choose the model.
+
+40
+00:00:56.300 --> 00:00:57.960
+You set the name and the personality.
+
+41
+00:00:57.960 --> 00:00:59.880
+And your bot starts answering.
+
+42
+00:00:59.880 --> 00:01:01.420
+What makes it a Jarvis is
+
+43
+00:01:01.420 --> 00:01:03.100
+the memory and the personality.
+
+44
+00:01:03.100 --> 00:01:04.740
+It remembers what you talked about,
+
+45
+00:01:04.740 --> 00:01:05.640
+keeps what matters,
+
+46
+00:01:05.640 --> 00:01:07.500
+and speaks the way you defined.
+
+47
+00:01:07.500 --> 00:01:08.940
+It's not a website that forgets everything
+
+48
+00:01:08.940 --> 00:01:10.160
+when you close the tab.
+
+49
+00:01:10.160 --> 00:01:11.940
+That's why it comes after OSWork.
+
+50
+00:01:11.940 --> 00:01:13.320
+You'll need a terminal,
+
+51
+00:01:13.320 --> 00:01:15.360
+folders, a configuration file, and a
+
+52
+00:01:15.360 --> 00:01:16.900
+key stored in the right place.
+
+53
+00:01:16.900 --> 00:01:18.660
+If you did sequence one, you'll install
+
+54
+00:01:18.660 --> 00:01:19.740
+Jarvis without a scare.
+
+55
+00:01:19.740 --> 00:01:21.580
+And the next step is to give it real
+
+56
+00:01:21.580 --> 00:01:22.520
+work to do:
+
+57
+00:01:22.520 --> 00:01:23.420
+task queues,
+
+58
+00:01:23.420 --> 00:01:24.220
+in sequence three.
+
+59
+00:01:24.220 --> 00:01:26.420
+INTELECTO, the installation guide, and
+
+60
+00:01:26.420 --> 00:01:28.160
+the Jarvis area are on INEMA dot
+
+61
+00:01:28.160 --> 00:01:30.080
+CLUB, open and free.
+
+62
+00:01:30.080 --> 00:01:30.960
+Install yours,
+
+63
+00:01:30.960 --> 00:01:31.660
+give it a name,
+
+64
+00:01:31.660 --> 00:01:33.040
+and start talking.

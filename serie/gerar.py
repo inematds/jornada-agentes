@@ -110,7 +110,11 @@ def pagina(pid, lang, C, roteiro, videos):
     # vídeo
     v = videos.get(pid)
     if v:
-        track = f'<track default kind="subtitles" src="{esc(v["vtt"])}" srclang="pt" label="{ui["subtitles"]}">' if v.get("vtt") else ""
+        # legenda no idioma da página quando existir serie/vtt/<id>-<lang>.vtt (o áudio continua PT)
+        vtt, sl, rot = v.get("vtt", ""), "pt", ui["subtitles"]
+        if vtt and lang != "pt" and (AQUI / "vtt" / f"{pid}-{lang}.vtt").exists():
+            vtt, sl, rot = vtt[:-4] + f"-{lang}.vtt", lang, {"en": "English", "es": "Español"}[lang]
+        track = f'<track default kind="subtitles" src="{esc(vtt)}" srclang="{sl}" label="{rot}">' if vtt else ""
         player = (f'<div class="player"><video controls preload="metadata" playsinline poster="{assets}{ban(pid, lang)}">'
                   f'<source src="{esc(v["url"])}" type="video/mp4">{track}</video></div>')
     else:

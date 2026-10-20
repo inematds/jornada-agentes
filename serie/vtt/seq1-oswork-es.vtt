@@ -1,0 +1,317 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.460
+Con media docena de comandos sales
+
+2
+00:00:01.460 --> 00:00:02.960
+del chat y pones a un agente a
+
+3
+00:00:02.960 --> 00:00:04.640
+trabajar dentro de tus carpetas.
+
+4
+00:00:04.640 --> 00:00:05.800
+Esta es la secuencia uno,
+
+5
+00:00:05.800 --> 00:00:08.280
+el OSWork, y separa a quien usa
+
+6
+00:00:08.280 --> 00:00:10.320
+inteligencia artificial de quien crea con ella.
+
+7
+00:00:10.320 --> 00:00:12.300
+En este video: por qué el chat se atasca,
+
+8
+00:00:12.300 --> 00:00:13.600
+los pasos de la terminal,
+
+9
+00:00:13.600 --> 00:00:14.300
+y al final,
+
+10
+00:00:14.300 --> 00:00:16.040
+el primer pedido para tu agente.
+
+11
+00:00:16.040 --> 00:00:18.640
+En el chat, la inteligencia artificial no ve
+
+12
+00:00:18.640 --> 00:00:19.700
+tus archivos,
+
+13
+00:00:19.700 --> 00:00:21.260
+olvida lo que le explicaste ayer,
+
+14
+00:00:21.260 --> 00:00:23.780
+y cada respuesta hay que copiarla y
+
+15
+00:00:23.780 --> 00:00:24.320
+pegarla.
+
+16
+00:00:24.320 --> 00:00:26.320
+Te conviertes en el cartero entre la ventana
+
+17
+00:00:26.320 --> 00:00:26.940
+y tu trabajo.
+
+18
+00:00:26.940 --> 00:00:29.600
+El OSWork muestra el camino en tres
+
+19
+00:00:29.600 --> 00:00:30.840
+ventanas: el Chat,
+
+20
+00:00:30.840 --> 00:00:32.420
+el Work y el Desktop.
+
+21
+00:00:32.420 --> 00:00:33.340
+Y después la terminal,
+
+22
+00:00:33.340 --> 00:00:34.480
+donde vive el agente.
+
+23
+00:00:34.480 --> 00:00:35.640
+La terminal asusta,
+
+24
+00:00:35.640 --> 00:00:36.840
+pero es solo otra ventana.
+
+25
+00:00:36.840 --> 00:00:38.980
+Escribes un comando y responde.
+
+26
+00:00:38.980 --> 00:00:40.720
+Con seis comandos te desplazas:
+
+27
+00:00:40.720 --> 00:00:41.620
+ver dónde estás,
+
+28
+00:00:41.620 --> 00:00:43.360
+listar, entrar a una carpeta,
+
+29
+00:00:43.360 --> 00:00:44.940
+volver, crear una carpeta,
+
+30
+00:00:44.940 --> 00:00:45.900
+abrir un archivo.
+
+31
+00:00:45.900 --> 00:00:46.780
+No es programar.
+
+32
+00:00:46.780 --> 00:00:48.520
+Es moverte por tus carpetas sin el
+
+33
+00:00:48.520 --> 00:00:48.860
+mouse.
+
+34
+00:00:48.860 --> 00:00:50.560
+El secreto está en las carpetas.
+
+35
+00:00:50.560 --> 00:00:51.660
+Una carpeta por proyecto,
+
+36
+00:00:51.660 --> 00:00:53.680
+y dentro de ella archivos de texto en
+
+37
+00:00:53.680 --> 00:00:54.180
+markdown.
+
+38
+00:00:54.180 --> 00:00:56.080
+Uno de ellos es el AGENTS punto MD:
+
+39
+00:00:56.080 --> 00:00:57.420
+las reglas del proyecto,
+
+40
+00:00:57.420 --> 00:00:58.100
+quién eres,
+
+41
+00:00:58.100 --> 00:00:59.140
+qué se puede y qué no se
+
+42
+00:00:59.140 --> 00:00:59.560
+puede.
+
+43
+00:00:59.560 --> 00:01:01.340
+El agente lee ese archivo cada vez
+
+44
+00:01:01.340 --> 00:01:01.900
+que empieza.
+
+45
+00:01:01.900 --> 00:01:03.280
+Es como entregarle el manual a un
+
+46
+00:01:03.280 --> 00:01:04.080
+empleado nuevo.
+
+47
+00:01:04.080 --> 00:01:05.060
+Ahora, el agente.
+
+48
+00:01:05.060 --> 00:01:06.800
+Entras a la carpeta del proyecto y
+
+49
+00:01:06.800 --> 00:01:08.880
+llamas a Claude Code o a Codex.
+
+50
+00:01:08.880 --> 00:01:11.040
+Le pides: crea una página sencilla sobre mí
+
+51
+00:01:11.040 --> 00:01:12.700
+y un archivo con las reglas de este
+
+52
+00:01:12.700 --> 00:01:13.360
+proyecto.
+
+53
+00:01:13.360 --> 00:01:14.920
+Los archivos aparecen en la carpeta.
+
+54
+00:01:14.920 --> 00:01:16.160
+No programaste nada.
+
+55
+00:01:16.160 --> 00:01:16.960
+Diste la tarea,
+
+56
+00:01:16.960 --> 00:01:18.740
+revisaste el resultado y decidiste.
+
+57
+00:01:18.740 --> 00:01:19.960
+Eso es gestión.
+
+58
+00:01:19.960 --> 00:01:21.280
+Después viene la seguridad.
+
+59
+00:01:21.280 --> 00:01:23.020
+Git guarda cada versión,
+
+60
+00:01:23.020 --> 00:01:24.240
+y si el agente se equivoca,
+
+61
+00:01:24.240 --> 00:01:24.860
+tú regresas.
+
+62
+00:01:24.860 --> 00:01:27.160
+Las claves y contraseñas quedan fuera del
+
+63
+00:01:27.160 --> 00:01:28.960
+texto, en un archivo de secretos.
+
+64
+00:01:28.960 --> 00:01:30.380
+Y al final del recorrido,
+
+65
+00:01:30.380 --> 00:01:32.220
+Telegram se vuelve la interfaz,
+
+66
+00:01:32.220 --> 00:01:34.860
+y un VPS deja al agente funcionando
+
+67
+00:01:34.860 --> 00:01:36.540
+incluso con tu computadora apagada.
+
+68
+00:01:36.540 --> 00:01:38.080
+Ese es el escalón que destraba las
+
+69
+00:01:38.080 --> 00:01:39.180
+otras tres secuencias:
+
+70
+00:01:39.180 --> 00:01:41.300
+Jarvis, las colas y las redes
+
+71
+00:01:41.300 --> 00:01:42.260
+en automático.
+
+72
+00:01:42.260 --> 00:01:43.460
+El OSWork completo,
+
+73
+00:01:43.460 --> 00:01:44.420
+comando por comando,
+
+74
+00:01:44.420 --> 00:01:45.960
+está en INEMA punto CLUB,
+
+75
+00:01:45.960 --> 00:01:47.260
+abierto y gratuito.
+
+76
+00:01:47.260 --> 00:01:48.520
+Abre la terminal hoy,
+
+77
+00:01:48.520 --> 00:01:49.620
+crea tu primera carpeta,
+
+78
+00:01:49.620 --> 00:01:51.000
+y dale la primera tarea a
+
+79
+00:01:51.000 --> 00:01:51.740
+tu agente.
